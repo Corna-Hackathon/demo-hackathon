@@ -11,6 +11,8 @@ body {
     background: linear-gradient(#09203f, #537895);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow-x: hidden;
+
 }
 
 
@@ -187,7 +189,7 @@ main div .circle_right {
     position: absolute;
     align-items: left;
     top: 140px;
-    left: 1000px;
+    left: 1300px;
     background: linear-gradient(to bottom, #119c83, #536d95, #f17b7b);
     display: inline-block;
     margin: 10px;
@@ -195,7 +197,9 @@ main div .circle_right {
     /* border: 1px solid #fff; */
     height: 1200px;
     width: 1200px;
+    object-fit: fill;
     border-radius: 50%;
+    /* clip-path: circle(67.6% at 93% 68%);; */
 }
 
 
@@ -255,3 +259,70 @@ main div .circle_right {
 
 /* Page2*/
 
+main div .rec_left{
+    left: 17%;
+    top: 150%;
+    position: absolute;
+    width: 300px;
+    height: 450px;
+    border-radius: 14%;
+    background: #7ed957;
+}
+
+main div .rec_mid{
+    left: 42.5%;
+    top: 150%;
+    position: absolute;
+    width: 300px;
+    height: 450px;
+    border-radius: 14%;
+    background: #ffde59;
+}
+
+main div .rec_right{
+    right: 17%;
+    top: 150%;
+    position: absolute;
+    width: 300px;
+    height: 450px;
+    border-radius: 14%;
+    background: #ff5757;
+} 
+
+
+main div .nft{
+    position: absolute;
+    top: 155%;
+    left: 22%;
+    width: 100px;
+    height: auto;
+}
+
+main div .coin{
+    position: absolute;
+    top: 155%;
+    left: 47.8%;
+    width: 100px;
+    height: auto;
+}
+
+main div .nft_text{
+    position: absolute;
+    top: 185%;
+    left: 17.5%;
+    font-size: 20px;
+}
+
+main div .corn_text{
+    position: absolute;
+    top: 185%;
+    left: 44%;
+    font-size: 20px;
+}
+
+main div .player_text{
+    position: absolute;
+    top: 185%;
+    right: 20.7%;
+    font-size: 20px;
+}
