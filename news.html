@@ -6,25 +6,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Main</title>
+
     
     <title>Main</title>
 </head>
 <body>
-    <header>
-        <a href="/index.html" class="logo">CornField </a>
-        <ul>
+    <!-- Header -->
+    <header >
+        <a href="#"><img src="/assets/logo.png" alt="logo" class="logo"> </a>
+        <!-- <a href="#" class="logo"><img src="/assets/logo.png" alt="logo"> </a> -->
+        <ul class="nav_links">
             <li><a href="/index.html" class="Home"> <strong>Home</strong></a></li>
             <li><a href="/news.html" class="news"><strong>News</strong></a></li>
             <li><a href="/podcast.html"class="podcast"><strong>Podcast</strong></a></li>
             <li><a href="/market.html" class="market"><strong>Marketplace</strong></a></li>
             <script src="/js/activePage.js"> </script>
-            <!-- <li><a href="#" class="neon-button">Neon</a></li> -->
             <li> <button class="button"> <strong>Connect</strong></button></li>
-
         </ul>
-        
+        <img src="assets/menu-btn.png" alt="menu button" class="menu-btn">
 
     </header>
 
+
+    <!-- Blog -->
+    <div class="blog-section">
+        <div class="section-content">
+
+            <div class="title">
+                <h2>CornField News</h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="image-section">
+                        <img src="/assets/cornn.png" alt="img-title">
+                    </div>
+                    <div class="article">
+                        <h4>Title one</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                    <div class="blog-view">
+                        <a href="" class="button-read">Read More</a>
+                    </div>
+                    <div class="posted-date"></div>
+                        <p>Posted on Jan 15 2022</p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="image-section">
+                        <img src="/assets/cornn.png" alt="img-title">
+                    </div>
+                    <div class="article">
+                        <h4>Title one</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                    <div class="blog-view">
+                        <a href="" class="button-read">Read More</a>
+                    </div>
+                    <div class="posted-date"></div>
+                        <p>Posted on Jan 15 2022</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navlinks = document.querySelector('.nav_links');
+
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile_menu');
+        });
+    </script>
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <ul class="socials">
+             <a href=""> <i class="fa fa-facebook"></i> </a>
+             <a href=""> <i class="fa fa-twitter"></i> </a> 
+             <a href=""> <i class="fa fa-youtube"></i> </a> 
+             <a href=""> <i class="fa fa-github"></i> </a> 
+        </ul>
+    <ul class="list">
+        <li>
+            <a href="#"><strong>Home</strong></a>
+        </li>
+        <li>
+            <a href="/news.html"> <strong>New</strong> </a>
+        </li>
+        <li>
+            <a href="/podcast.html"> <strong>Podcast</strong></a>
+        </li>
+        <li>
+            <a href="market.html"> <strong>Marketplace</strong></a>
+        </li>
+    </ul>
+
+    <p class="copyright">
+        Corna Coders &copy; 2022
+    </p>
+</div>
 </body>
 </html>
