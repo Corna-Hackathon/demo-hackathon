@@ -534,28 +534,106 @@ main div .circle_right {
     position: absolute;
     bottom: 29%;
 }
-/* #Section  .nft{
-    position: absolute;
-    top: 155%;
-    left: 22%;
-    width: 100px;
-    height: auto;
+
+
+
+
+.bruh {
+    background: linear-gradient(to top, #5d5d81, #bfcde0, #3b3555);
+    font-family: poppins;
 }
-
-#Section  .coin{
-    position: absolute;
-    top: 155%;
-    left: 47.8%;
-    width: 100px;
-    height: auto;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.wrapper{
+  width:1200px;
+  margin:200px auto;
+  
 }
-
-
-#Section  .group{
-    position: absolute;
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
-    top: 155%;
-    right: 22%;
-    width: 100px;
-    height: auto;
-} */
+.blog{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  margin-left: 10px;
+}
+.single-blog{
+  flex-basis:390px;
+  border:1px solid #eee;
+}
+.blog-img{
+  position:relative;
+  overflow:hidden;
+}
+.blog-img img{
+  width:100%;
+  transition:.3s;
+}
+.single-blog:hover .blog-img img{
+  transform:scale(1.1)
+}
+.blog-img a{
+  position:absolute;
+  left:0;
+  top:0;
+  color:#fff;
+  text-decoration:none;
+  text-transform:capitalize;
+  font-size:18px;
+  background-color:#ff7720;
+  padding:10px 30px;
+}
+.blog-info{
+border-radius: 4%;
+  width:80%;
+  margin:0 auto;
+  border:1px solid #ccc;
+  position:relative;
+  z-index:2;
+  margin-top:-30px;
+  padding:10px 5px;
+  background-color:#fff;
+  text-align:center;
+}
+.blog-info a{
+  color:#333;
+  text-decoration:none;
+  margin:0 10px;
+  display:inline-block
+}
+.blog-content{
+  padding:20px;
+}
+.blog-content h4{
+  font-size:22px;
+  font-weight:600;
+  text-transform:capitalize;
+  border-bottom:1px solid #eee;
+  margin-bottom:10px;
+  padding-bottom:5px;
+}
+.blog-content a{
+  background-color:#ff7720;
+  color:#fff;
+  border-radius: 10px;
+  text-decoration:none;
+  padding:10px 20px;
+  font-size:16px;
+  text-transform:capitalize;
+  display:inline-block;
+  margin-top:20px;
+  position:relative;
+  z-index:2;
+  overflow:hidden;
+}
+.blog-content a:before{
+  position:absolute;
+  width:100%;
+  height:100%;
+  left:-100%;
+  top:0;
+  background-color:#333;
+  content:"";
+  transition:.3s;
+  z-index:-1;
+}
+.blog-content a:hover:before{
+  left:0;
+}
