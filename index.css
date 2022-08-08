@@ -20,7 +20,7 @@ body {
     overflow-x: hidden;
     margin: 0;
     width: auto;
-    background: linear-gradient(#09203f, #537895);
+    background: linear-gradient(to top, #3A6B35, #E3B448,  #CBD18F);
 
 }
 
@@ -37,7 +37,7 @@ header {
     justify-content: space-between;
     align-items: center;
     font-family: Arial Bold,  'Arial Narrow Bold', sans-serif;
-    background: linear-gradient(to left, #6CCECB,  #8EDC9D);
+    background: linear-gradient(to left, #f48f3c, #bb6c69);
     height: 70px;
     border-radius: 2px;
 
@@ -138,16 +138,16 @@ header ul li button.connect
     overflow: hidden;
     cursor: pointer;
     border: 1px;
-    background: #f17b7b;
+    background: #6558db;
     color: white;
     font-weight: 500;
     font-family: noto sans;
     transition: box-shadow 0.5s ease-in-out, border-color 0.5s ease-in-out;
 }
 .button:hover {
-    background-color: #4b00ff;
+    background-color: #6558db;
     color: #fff;
-    box-shadow: 0 0 5px #4b00ff,
+    box-shadow: 0 0 5px #6558db,
                 0 0 20px rgba(76, 0, 255, 0.596),
                 0 0 35px rgb(75 0 255 / 0.7),
                 0 0 50px rgb(75 0 255 / 0.6);
@@ -161,19 +161,19 @@ header ul li button.connect
     font-size: 20px;
     overflow: hidden;
     cursor: pointer;
-    border: 2px solid #f17b7b;
-    background: #f17b7b;
+    border: 2px solid #6558db;
+    background: #6558db;
     color: #000;
     font-weight: 600;
     transition: box-shadow 0.5s ease-in-out, border-color 0.5s ease-in-out;
 }
 .button:hover {
-    background-color: #f17b7b;
+    background-color: #6558db;
     color: #000;
-    box-shadow: 0 0 5px #f17b7b,
-                0 0 20px rgb(241 123 123 / 0.8),
-                0 0 35px rgb(241 123 123 / 0.7),
-                0 0 50px rgb(241 123 123 / 0.6);
+    box-shadow: 0 0 5px #6558db,
+                0 0 20px rgb(24.75 21.57 53.68 / 0.8),
+                0 0 35px rgb(24.75 21.57 53.68 / 0.7),
+                0 0 50px rgb(24.75 21.57 53.68 / 0.6);
     border-color: #fff;
 }
 
@@ -422,7 +422,7 @@ main div .circle_left {
     position: absolute;
     top: 500px;
     right: 1600px;
-    background: linear-gradient(to bottom, #119c83, #536d95, #f17b7b);
+    background:linear-gradient( coral, yellow);
     display: inline;
     margin: 10px;
     z-index: -1;
@@ -438,7 +438,7 @@ main div .circle_right {
     align-items: left;
     top: 140px;
     left: 1300px;
-    background: linear-gradient(to bottom, #119c83, #536d95, #f17b7b);
+    background: linear-gradient( coral, yellow);
     display: inline-block;
     margin: 10px;
     z-index: -1;
@@ -452,7 +452,7 @@ main div .circle_right {
 
  .sketch_data{
     height: 100vh;
-    background-color: inherit;
+    background-color: linear-gradient(#E3B448,  #CBD18F);
     width: auto;
     position: flex;
     display: flex;
@@ -637,3 +637,32 @@ border-radius: 4%;
 .blog-content a:hover:before{
   left:0;
 }
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+
+  .dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
