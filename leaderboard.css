@@ -466,7 +466,7 @@ div .Text{
 .content-table{
     position: relative;
     border-radius: 1em;
-    top: 140px;
+    bottom: -30px;
     align-items: center;
     border-collapse: collapse;
     margin: 19px 0;
