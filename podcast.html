@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="podcast.css">
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Main</title>
+</head>
+<body>
+    <header>
+        <a href="#"><img src="/assets/logo.png" alt="logo" class="logo"> </a>
+        <!-- <a href="#" class="logo"><img src="/assets/logo.png" alt="logo"> </a> -->
+        <ul class="nav_links">
+            <li><a href="/index.html" class="Home"> <strong>Home</strong></a></li>
+            <li><a href="/news.html" class="news"><strong>News</strong></a></li>
+            <li><a href="/podcast.html"class="podcast"><strong>Podcast</strong></a></li>
+            <li><a href="/market.html" class="market"><strong>Marketplace</strong></a></li>
+            <li> <button class="dropbtn">More</button> </li>
+            <script src="/js/activePage.js"> </script>
+            
+            <li> <button class="button"> <strong>Connect</strong></button></li>
+        </ul>
+        <img src="assets/menu-btn.png" alt="menu button" class="menu-btn">
+
+    </header>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navlinks = document.querySelector('.nav_links');
+
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile_menu');
+        });
+    </script>
+    
+    <main>
+        <h2 class="glow">PODCAST</h2>
+        <div class="podcast_box">
+
+
+        </div>
+    </main>
+    
+    <div class="back-to-top">
+        <span class="back-top"><i class="fa fa-angle-up"></i></span>
+    </div>
+    <div class="footer" >
+            <ul class="socials">
+                 <a href=""> <i class="fa fa-facebook"></i> </a>
+                 <a href=""> <i class="fa fa-twitter"></i> </a> 
+                 <a href=""> <i class="fa fa-youtube"></i> </a> 
+                 <a href=""> <i class="fa fa-github"></i> </a> 
+            </ul>
+        <ul class="list">
+            <li>
+                <a href="#"><strong>Home</strong></a>
+            </li>
+            <li>
+                <a href="/news.html"> <strong>New</strong> </a>
+            </li>
+            <li>
+                <a href="/podcast.html"> <strong>Podcast</strong></a>
+            </li>
+            <li>
+                <a href="market.html"> <strong>Marketplace</strong></a>
+            </li>
+        </ul>
+
+        <article class="copyright">
+            Corna Coders &copy; 2022
+        </article>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+
+    <a href="#" class="to_top">
+        <i class="fa fa-chevron-up"></i>
+        <script src="/js/to_top.js"> </script>
+    </a>
+
+    <h2> ặifjiejifjawif</h2>
+</body>
+</html>
