@@ -333,16 +333,67 @@ header ul li button.connect
     pointer-events: auto;
     opacity: 1;
 }
-/* main {
-    background: linear-gradient(#09203f, #537895);
 
-} */
+.dropdown a{
+    border: none;
+  padding: 15px 34px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  width: 100%;
+  margin: 4px 2px;
+  cursor: pointer;
+    text-decoration: none;
+    padding: 6px 20px;
+    font-family: Noto Sans;
+    background-color:  #e88845;
+    color: #fff;
+}
+
+.dropdown-content {
+
+    background-color: inherit;
+    display: none;
+    position: absolute;
+    width: auto;
+    overflow: auto;
+
+
+}
+
+
+.dropdown:hover .dropdown-content {
+    overflow-x: hidden;
+    display: block;
+
+
+}
+
+
+.dropdown-content a {
+    font-family: Noto Sans;
+    display: block;
+    color: #000000;
+    border-radius: 0%;
+    padding: 10px;
+    text-decoration: none;
+
+
+}
+
+.dropdown-content a:hover {
+
+
+    background-color: #bb6c69;
+    color: #fff;
+
+}
 
 
 
 main h2.glow {
-    position: absolute;
-    right: 40%;
+    position: relative;
     top: 90px;
     font-size: 60px;
     color: #fff;
