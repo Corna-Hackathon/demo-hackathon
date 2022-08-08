@@ -20,7 +20,7 @@ body {
     overflow-x: hidden;
     margin: 0;
     width: auto;
-    background: linear-gradient(to top, #3A6B35, #E3B448,  #CBD18F);
+    background: #94B49F;
 
 }
 
@@ -465,21 +465,27 @@ div .Text{
 /* Table */
 .content-table{
     position: relative;
-    top: 190px;
+    border-radius: 1em;
+    top: 140px;
     align-items: center;
     border-collapse: collapse;
     margin: 19px 0;
-    min-width: 100%;
+    min-width: 90%;
     font-size: 2rem;
-    background-color: #e88845;
+    overflow: hidden;
+    background-color: #DF7861;
     font-family: baloo bhai;
 }
-
+.content-table thead{
+    border-radius: 1em;
+}
 .content-table thead tr{
-    background-color: #009879;
+    background: #76549A;
     color: #fff;
+    border-radius: 1em;
     text-align: left;
     font-weight: bold;
+    
 }
 
 .content-table th,
@@ -489,10 +495,9 @@ div .Text{
 
 
 .content-table tbody tr{
-    border-bottom: 1px solid #dddddd;
     /* z-index: -1; */
 }
 
 .content-table tbody tr:nth-child(even){
-    background-color: #f3f3f3;
+    background-color: #FCF8E8;
 }
