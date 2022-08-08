@@ -420,7 +420,7 @@ div .Text{
 
 .topnav input[type=text] {
     position: relative;
-    top: 30px;
+    top: 50px;
     float: right;
     padding: 6px;
     margin-top: 70px;
@@ -449,7 +449,7 @@ div .Text{
 
 .topnav i{
     position: relative;
-    top: 30px;
+    top: 50px;
     float: right;
     padding: 6px;
     margin-top: 70px;
@@ -460,13 +460,20 @@ div .Text{
     cursor: pointer;
 }
 
+.flex-box{
 
+        display: flex;
+      align-items: center;
+      justify-content: center;
+
+}
 
 /* Table */
 .content-table{
+    float: top;
     position: relative;
     border-radius: 1em;
-    top: 140px;
+    top: 50px;
     align-items: center;
     border-collapse: collapse;
     margin: 19px 0;
