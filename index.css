@@ -358,8 +358,8 @@ main h2.text {
 main img.corn {
     position: absolute;
     box-sizing: border-box;
-    top: 9%;
-    left: 25.3%;
+    top: 10%;
+    left: 30.3%;
     width: 7.8%;
 
 }
@@ -405,7 +405,7 @@ main img.character {
     transform: scaleX(-1);
     position: absolute;
     top: 50px;
-    left: 1000px;
+    left: 900px;
     width: 50%;
 }
 
