@@ -494,10 +494,25 @@ div .Text{
 }
 
 
-.content-table tbody tr{
-    /* z-index: -1; */
-}
+
 
 .content-table tbody tr:nth-child(even){
     background-color: #FCF8E8;
 }
+
+@media screen and (max-width: 1497px) {
+    .content-table{
+        position: relative;
+        border-radius: 1em;
+        bottom: -10px;
+        align-items: center;
+        border-collapse: collapse;
+        margin: 19px 0;
+        min-width: 90%;
+        font-size: 2rem;
+        overflow: hidden;
+        background-color: #DF7861;
+        font-family: baloo bhai;
+    }
+}
+    
