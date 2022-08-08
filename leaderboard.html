@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="leaderboard.css">
     <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Main</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
+    <title>LeaderBoard</title>
 </head>
 <body>
     <header>
-        <a href="#"><img src="/assets/logo.png" alt="logo" class="logo"> </a>
+        <a href="index.html"><img src="/assets/logo.png" alt="logo" class="logo"> </a>
         <!-- <a href="#" class="logo"><img src="/assets/logo.png" alt="logo"> </a> -->
         <ul class="nav_links">
             <li><a href="/index.html" class="Home"> <strong>Home</strong></a></li>
@@ -23,7 +25,7 @@
             <li> <div class="dropdown">
                 <a> <strong> More </strong> <i class="fa fa-caret-down"></i></a>
                 <div class="dropdown-content">
-                    <a href="charity.html/">Charity</a>
+                    <a href="charity.html">Charity</a>
                     <a href="/leaderboard.html">LeaderBoard</a>
                 </div>
               </div> </li>
@@ -44,58 +46,17 @@
         });
     </script>
 
-    <main> 
-        <div class="content">
-            <div class="left">
-            <h2 class="text">A digital <br> Nation</h2>
-            
-            <img src="/assets/cornn.png" alt="corn" class="corn" >
-            <h3 class="quote">Start your corn farm today !</h3>
-            <button href="#" class="start"> <strong> Getting Started </strong></button>
-        </div>
-            <img src="/assets/character.png" alt="" class="character">
-        </div>
-        <div class="circle" >
-            <div class="circle_left"></div>
-            <div class="circle_right"></div>
-        </div>
-    
-    </main> 
-    <div id="Section">
-        
-        <!-- <img src="/assets/nft.png" alt="nft" class="nft" data-aos="fade-left" data-aos-duration="1000"> <br>
-        <img src="/assets/coin.png" alt="coin" class="coin" data-aos="fade-left" data-aos-duration="1000">  <br>
-        <img src="/assets/group.png" alt="group.png" class="group" data-aos="fade-left" data-aos-duration="1000"> <br> -->
-    <div class="sketch_data">
-        <div class="rec_left"  > 
-            <img src="/assets/nftt.png" alt="nft" class="nft" data-aos="fade-up" data-aos-duration="1000">
-            <pre>             <div class="circle_1" data-aos="fade-up" data-aos-duration="1000"></div> </pre>
-            <pre class="nft_text" data-aos="fade-up" data-aos-duration="1000"> Traded on our in-house 
-       marketplace</pre>
-         </div>
-        <div class="rec_mid" >  
-            <img src="/assets/coinn.png" alt="coin" class="coin" data-aos="fade-up" data-aos-duration="1000"> 
-            <pre>             <div class="circle_1" data-aos="fade-up" data-aos-duration="1000"></div> </pre>
-            <pre class="nft_text" data-aos="fade-up" data-aos-duration="1000">    The most expensive
-      corn ever sold</pre> </div>
 
-        <div class="rec_right" >
-            <img src="/assets/groupp.png" alt="group.png" class="group" data-aos="fade-up" data-aos-duration="1000"> 
-            <pre>             <div class="circle_1" data-aos="fade-up" data-aos-duration="1000"></div> </pre>
-            <pre class="nft_text" data-aos="fade-up" data-aos-duration="1000">      Daily active
-         players</pre></div>
-    </div>
-</div>
 
     <div class="back-to-top">
         <span class="back-top"><i class="fa fa-angle-up"></i></span>
     </div>
     <div class="footer" >
             <ul class="socials">
-                 <a href=""> <i class="fa fa-facebook"></i> </a>
-                 <a href=""> <i class="fa fa-twitter"></i> </a> 
-                 <a href=""> <i class="fa fa-youtube"></i> </a> 
-                 <a href=""> <i class="fa fa-github"></i> </a> 
+                <a href=""> <i class="fa fa-facebook"></i> </a>
+                <a href=""> <i class="fa fa-twitter"></i> </a> 
+                <a href=""> <i class="fa fa-youtube"></i> </a> 
+                <a href=""> <i class="fa fa-github"></i> </a> 
             </ul>
         <ul class="list">
             <li>
@@ -119,9 +80,72 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+    AOS.init();
     </script>
 
+    <div class="Leaderboard">
+        <div class="head">
+        <div class="Text">
+            <h2> <strong>Leaderboard</strong></h2>
+        </div>
+       
+        <div class="topnav">
+            <pre> <input type="text" placeholder="Search.."> <i class="fa fa-search"></i> </pre>
+        </div>
+
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>Position</th>
+                    <th>Time</th>
+                    <th>User</th>
+                    <th>Podcast</th>
+                    <th>Corn</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>230</td>
+                    <td>User1</td>
+                    <td>50</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>125</td>
+                    <td>User2</td>
+                    <td>48</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>120</td>
+                    <td>User3</td>
+                    <td>20</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>04</td>
+                    <td>230</td>
+                    <td>User4</td>
+                    <td>50</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>05</td>
+                    <td>60</td>
+                    <td>User5</td>
+                    <td>12</td>
+                    <td>6</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+
+        
+    </div>
 
     <a href="#" class="to_top">
         <i class="fa fa-chevron-up"></i>
