@@ -393,7 +393,7 @@ header ul li button.connect
 
 
 .head{
-    height: 80vh;
+    height: auto;
     display: flex;
     justify-self: space-between;
     align-items: center;
