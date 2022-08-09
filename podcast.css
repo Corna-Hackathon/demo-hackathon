@@ -440,7 +440,7 @@ header ul li button.connect
     flex-direction: row;
     position:relative;
     top: 100px;
-    justify-content: space-between;
+    gap: 200px;
     flex-wrap: wrap;
 }
 
