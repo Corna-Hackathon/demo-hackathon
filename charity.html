@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="charity.css">
+        <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <title>Charity</title>
+    </head>
+<body>
+    <header>
+        <a href="index.html"><img src="/assets/logo.png" alt="logo" class="logo"> </a>
+        <!-- <a href="#" class="logo"><img src="/assets/logo.png" alt="logo"> </a> -->
+        <ul class="nav_links">
+            <li><a href="/index.html" class="Home"> <strong>Home</strong></a></li>
+            <li><a href="/news.html" class="news"><strong>News</strong></a></li>
+            <li><a href="/podcast.html"class="podcast"><strong>Podcast</strong></a></li>
+            <!-- <li><a href="/market.html" class="market"><strong>Marketplace</strong></a></li> -->
+            <li> <div class="dropdown">
+                <a> <strong> More </strong> <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="/charity.html">Charity</a>
+                    <a href="/leaderboard.html">LeaderBoard</a>
+                </div>
+              </div> </li>
+            <script src="/js/activePage.js"> </script>
+            
+            <li> <button class="button"> <strong>Connect</strong></button></li>
+        </ul>
+        <img src="assets/menu-btn.png" alt="menu button" class="menu-btn">
+
+    </header>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navlinks = document.querySelector('.nav_links');
+
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile_menu');
+        });
+    </script>
+
+
+    <div class="back-to-top">
+        <span class="back-top"><i class="fa fa-angle-up"></i></span>
+    </div>
+    <div class="footer" >
+            <ul class="socials">
+                <a href=""> <i class="fa fa-facebook"></i> </a>
+                <a href=""> <i class="fa fa-twitter"></i> </a> 
+                <a href=""> <i class="fa fa-youtube"></i> </a> 
+                <a href=""> <i class="fa fa-github"></i> </a> 
+            </ul>
+        <ul class="list">
+            <li>
+                <a href="#"><strong>Home</strong></a>
+            </li>
+            <li>
+                <a href="/news.html"> <strong>New</strong> </a>
+            </li>
+            <li>
+                <a href="/podcast.html"> <strong>Podcast</strong></a>
+            </li>
+            <li>
+                <a href="market.html"> <strong>Marketplace</strong></a>
+            </li>
+        </ul>
+
+        <article class="copyright">
+            Corna Coders &copy; 2022
+        </article>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+ <div class="charity">
+    <div class="head">
+    <div class="flex-box">
+        <div class="Text">
+            <h2> <strong>Charity</strong></h2>
+        </div>
+        <div class="small_text">
+            <h2> <strong>At Cornfield.com we take a 5% transaction fees to donate to charities of your choice!   </strong></h2>
+    </div>
+</div>
+    <div class="flex-container">
+        <script> 
+            function who() {
+                window.location.href = "charity.html";
+            }
+            function cross() {
+                window.location.href = "charity.html";
+            }
+            function children() {
+                window.location.href = "charity.html";
+            }
+            function plan() {
+                window.location.href = "charity.html";
+            }
+            function unicef() {
+                window.location.href = "charity.html";
+            }
+            function maiam() {
+                window.location.href = "charity.html";
+            }
+        </script>
+        <img src="/assets/charity-img/who.jpg" alt="" class="Flex-box" onclick="who()">
+        <img src="/assets/charity-img/cross.jpg" alt="" class="Flex-box" onclick="cross()">
+        <img src="/assets/charity-img/children.jpg" alt="" class="Flex-box" onclick="children()">
+        <img src="/assets/charity-img/plan.jpg" alt="" class="Flex-box" onclick="plan()">
+        <img src="/assets/charity-img/unicef.jpg" alt="" class="Flex-box" onclick="unicef()"> 
+        <img src="/assets/charity-img/maiam.jpg" alt="" class="Flex-box" onclick="maiam()">
+    </div>
+
+</div>
+<div class="text-bottom">
+    <strong>Choose one to get started now!</strong> 
+</div>
+ </div>
+    <a href="#" class="to_top">
+        <i class="fa fa-chevron-up"></i>
+        <script src="/js/to_top.js"> </script>
+    </a>
+</body>
+</html>
