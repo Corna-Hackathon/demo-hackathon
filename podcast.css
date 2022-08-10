@@ -434,23 +434,32 @@ header ul li button.connect
     font-size: 17px;
     cursor: pointer;
 }
-
-.flex-container {
+.bruh{
     display: flex;
-    flex-direction: row;
-    position:relative;
-    top: 100px;
-    gap: 200px;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-.flex-box {
-    width: 20px;
-    height: 20px;
-    background-color: green;
-    border-radius: 50px;
-    flex: 0 10% ;
-    margin-bottom: 20%;
-    padding:5px; 
 
+
+
+.flex-container{
+    width: 100%;
+    height: auto;
+    gap: 1%;
+    display: flex;
+    position: relative;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+
+.flex-box {
+    width: 100px;
+    height: 25px;
+    border-radius: 10%;
+    background-color: #94df93;
+    text-align: center;
+    line-height: 25px;
+    border: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
