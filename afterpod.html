@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="after.css">
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Podcast</title>
+</head>
+<body>
+    <header>
+        <a href="#"><img src="/assets/logo.png" alt="logo" class="logo"> </a>
+        <!-- <a href="#" class="logo"><img src="/assets/logo.png" alt="logo"> </a> -->
+        <ul class="nav_links">
+            <li><a href="/index.html" class="Home"> <strong>Home</strong></a></li>
+            <li><a href="/news.html" class="news"><strong>News</strong></a></li>
+            <li><a href="/podcast.html"class="podcast"><strong>Podcast</strong></a></li>
+            <!-- <li><a href="/market.html" class="market"><strong>Marketplace</strong></a></li> -->
+            <li> <div class="dropdown">
+                <a> <strong> More </strong> <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="/charity.html">Charity</a>
+                    <a href="/leaderboard.html">LeaderBoard</a>
+                </div>
+              </div> </li>
+            <script src="/js/activePage.js"> </script>
+            
+            <li> <button class="button"> <strong>Connect</strong></button></li>
+        </ul>
+        <img src="assets/menu-btn.png" alt="menu button" class="menu-btn">
+
+    </header>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navlinks = document.querySelector('.nav_links');
+
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile_menu');
+        });
+    </script>
+
+
+    <div class="podcast">
+        <div class="text_header">
+            <h2> <strong>Quiz</strong></h2>
+        </div>
+
+
+        <div class="flex-box">
+            <div class="podcasts">
+                <img src="assets/blog-img/one.jpg" alt="" class="name-pod">
+                <div class="bruh">
+                    <h3>Budgeting Radio</h3>
+                    <br>
+                    <pre style="font-size: 13px;">Learn how to manage your expenses, savings and 
+investment. </pre>
+                </div>
+
+            </div>
+            <div class="finish">
+                <h3> <strong> You have listened to this podcast.  Click here to start the quiz  </strong></h3>
+            </div>
+            <button class="start-button">Start</button>
+        </div>
+    </div>
+</body>
+</html>
