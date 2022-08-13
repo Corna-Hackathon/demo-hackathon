@@ -20,21 +20,21 @@ const musics = [
     title: "GIAYPHUT",
     file: "GIAYPHUT.mp3",
     image:
-      "https://images.unsplash.com/photo-1614624532983-4ce03382d63d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80",
+      "./assets/GIAYPHUT-Img.jpg",
   },
   {
     id: 2,
     title: "Perfect Girl",
     file: "PerfectGirl.mp3",
     image:
-      "https://images.unsplash.com/photo-1616763355548-1b606f439f86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "./assets/Perfect Girl-Img.jpg",
   },
   {
     id: 3,
     title: "Reflections",
     file: "Reflections.mp3",
     image:
-      "https://images.unsplash.com/photo-1616763355548-1b606f439f86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "./assets/Reflections-Img.jpg",
   },
 ];
 /**
