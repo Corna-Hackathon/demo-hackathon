@@ -84,7 +84,6 @@ header ul li a{
 
 header ul li a:hover 
 {
-    background-color: #FFFF00;
     color: #000;
     box-shadow: 0 0 5px #FFFF00,
                 0 0 20px rgb(255 255 0 / 0.8),
@@ -92,8 +91,6 @@ header ul li a:hover
                 0 0 50px rgb(255 255 0 / 0.6);
     background: #ffff00;
     transition: all 0.5s ease-out;
-    color: #000;
-    
 }
 
 header ul li a.active 
@@ -141,7 +138,7 @@ header ul li button.connect
     background: #6558db;
     color: white;
     font-weight: 500;
-    font-family: noto sans;
+    font-family: "noto sans", sans-serif;
     transition: box-shadow 0.5s ease-in-out, border-color 0.5s ease-in-out;
 }
 .button:hover {
@@ -152,7 +149,7 @@ header ul li button.connect
                 0 0 35px rgb(75 0 255 / 0.7),
                 0 0 50px rgb(75 0 255 / 0.6);
     border-color: #fff;
-}*/
+}
 .button {
     outline: 0;
     position: relative;
@@ -181,7 +178,7 @@ header ul li button.connect
 
 .dropdown a{
     border: none;
-  padding: 15px 34px;
+  /*padding: 15px 34px;*/
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -189,9 +186,9 @@ header ul li button.connect
   width: 100%;
   margin: 4px 2px;
   cursor: pointer;
-    text-decoration: none;
+    /*text-decoration: none;*/
     padding: 6px 20px;
-    font-family: Noto Sans;
+    font-family: "Noto Sans", sans-serif;
     background-color:  #e88845;
     color: #fff;
 }
@@ -211,28 +208,21 @@ header ul li button.connect
 .dropdown:hover .dropdown-content {
     overflow-x: hidden;
     display: block;
-
-
 }
 
 
 .dropdown-content a {
-    font-family: Noto Sans;
+    font-family: "Noto Sans", sans-serif;
     display: block;
     color: #000000;
-    border-radius: 0%;
+    border-radius: 0;
     padding: 10px;
     text-decoration: none;
-
-
 }
 
 .dropdown-content a:hover {
-
-
     background-color: #bb6c69;
     color: #fff;
-
 }
 
 
@@ -241,17 +231,17 @@ div .text_header{
     top: 80px;
     text-align: center;
     font-size: 30px;
-    font-family: Noto Sans;
+    font-family: "Noto Sans", sans-serif;
     color: #ff5722;
-  text-shadow:
-      0 0 7px #fff,
-      0 0 10px #fff,
-      0 0 21px #fff,
-      0 0 42px #0fa,
-      0 0 82px #0fa,
-      0 0 92px #0fa,
-      0 0 102px #0fa,
-      0 0 151px #0fa;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
 }
 
 
@@ -301,7 +291,7 @@ div .podcasts .bruh{
 
 div .finish{
     font-size: 25px;
-    font-family: Noto Sans;
+    font-family: "Noto Sans", sans-serif;
     margin-top: 7%;
     color: white;
 }
@@ -318,7 +308,7 @@ div .finish{
     background: #6558db;
     color: white;
     font-weight: 600;
-    font-family: noto sans;
+    font-family: "noto sans", sans-serif;
     transition: box-shadow 0.5s ease-in-out, border-color 0.5s ease-in-out;
 }
 .start-button:hover {
@@ -329,7 +319,7 @@ div .finish{
                 0 0 35px rgb(75 0 255 / 0.7),
                 0 0 50px rgb(75 0 255 / 0.6);
     border-color: #fff;
-}*/
+}
 .start-button {
     outline: 0;
     position: relative;

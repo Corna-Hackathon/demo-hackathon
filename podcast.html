@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="podcast.css">
+<!--    <link rel="stylesheet" href="css/podcast.css"/>-->
+    <link rel="stylesheet" type="text/css" href="css/podcast.css">
     <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
@@ -50,25 +51,30 @@
     <main>
         <div class="bruh">
         <div class="topnav">
-            <pre> <input type="text" placeholder="Search.."> <i class="fa fa-search"></i> </pre>
+            <pre> <label> <input type="text" placeholder="Search.."> <i class="fa fa-search"></i> </label> </pre>
         </div>
         <div class="flex-container" >
-        <select class="flex-box" style="font-family: fontAwesome;">  
-            <option value='fa-music'>&#xf001; Best</option>
-            <option value="saab">Value</option>
-            <option value="opel">Value</option>
-            <option value="audi">Value</option> </select> 
-        <select class="flex-box"  style="font-family: fontAwesome;">
-            <option value='fa-calendar-plus-o'>&#xf271;This Month</option>
-            <option value="saab">Value</option>
-            <option value="opel">Value</option>
-            <option value="audi">Value</option> </select> 
-        </select>
-        <select class="flex-box" style="font-family: fontAwesome;">
-            <option value='fa-filter'>&#xf0b0;  Add Filter</option>
-            <option value="saab">Value</option>
-            <option value="opel">Value</option>
-            <option value="audi">Value</option> </select> 
+            <label>
+                <select class="flex-box" style="font-family: fontAwesome;">
+                    <option value='fa-music'>&#xf001; Best</option>
+                    <option value="saab">Value</option>
+                    <option value="opel">Value</option>
+                    <option value="audi">Value</option> </select>
+            </label>
+            <label>
+                <select class="flex-box"  style="font-family: fontAwesome;">
+                    <option value='fa-calendar-plus-o'>&#xf271;This Month</option>
+                    <option value="saab">Value</option>
+                    <option value="opel">Value</option>
+                    <option value="audi">Value</option> </select>
+            </label>
+            <label>
+                <select class="flex-box" style="font-family: fontAwesome;">
+                    <option value='fa-filter'>&#xf0b0;  Add Filter</option>
+                    <option value="saab">Value</option>
+                    <option value="opel">Value</option>
+                    <option value="audi">Value</option> </select>
+            </label>
         </div>    
     </div>
 
@@ -78,12 +84,12 @@
         <span class="back-top"><i class="fa fa-angle-up"></i></span>
     </div>
     <div class="footer" >
-            <ul class="socials">
-                 <a href=""> <i class="fa fa-facebook"></i> </a>
-                 <a href=""> <i class="fa fa-twitter"></i> </a> 
-                 <a href=""> <i class="fa fa-youtube"></i> </a> 
-                 <a href=""> <i class="fa fa-github"></i> </a> 
-            </ul>
+        <ul class="socials">
+            <li><a href=""> <i class="fa fa-facebook"></i> </a></li>
+            <li><a href=""> <i class="fa fa-twitter"></i> </a> </li>
+            <li><a href=""> <i class="fa fa-youtube"></i> </a> </li>
+            <li><a href=""> <i class="fa fa-github"></i> </a></li>
+        </ul>
         <ul class="list">
             <li>
                 <a href="#"><strong>Home</strong></a>

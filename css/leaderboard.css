@@ -15,12 +15,10 @@ body {
     min-height: 100vh;
     padding-bottom: 203.8px;
     position: relative;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     overflow-x: hidden;
     margin: 0;
     width: auto;
-    background: #94B49F;
+    background: #94B49F no-repeat fixed;
 
 }
 
@@ -36,7 +34,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: Arial Bold,  'Arial Narrow Bold', sans-serif;
+    font-family: 'Arial Bold', 'Arial Narrow Bold', sans-serif;
     background: linear-gradient(to left, #f48f3c, #bb6c69);
     height: 70px;
     border-radius: 2px;
@@ -84,7 +82,6 @@ header ul li a{
 
 header ul li a:hover 
 {
-    background-color: #FFFF00;
     color: #000;
     box-shadow: 0 0 5px #FFFF00,
                 0 0 20px rgb(255 255 0 / 0.8),
@@ -92,8 +89,6 @@ header ul li a:hover
                 0 0 50px rgb(255 255 0 / 0.6);
     background: #ffff00;
     transition: all 0.5s ease-out;
-    color: #000;
-    
 }
 
 header ul li a.active 
@@ -141,7 +136,7 @@ header ul li button.connect
     background: #6558db;
     color: white;
     font-weight: 500;
-    font-family: noto sans;
+    font-family: 'noto sans', sans-serif;
     transition: box-shadow 0.5s ease-in-out, border-color 0.5s ease-in-out;
 }
 .button:hover {
@@ -152,7 +147,8 @@ header ul li button.connect
                 0 0 35px rgb(75 0 255 / 0.7),
                 0 0 50px rgb(75 0 255 / 0.6);
     border-color: #fff;
-}*/
+}
+
 .button {
     outline: 0;
     position: relative;
@@ -189,11 +185,10 @@ header ul li button.connect
     text-align: center;
     background-color:rgb(248, 244, 244);
     padding: 40px;
-    position: absolute;
-    bottom: 0px;
+    bottom: 0;
     width: 100%;
     height: auto;
-    font-family: Open Sans;
+    font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -233,10 +228,9 @@ header ul li button.connect
     margin-bottom: 0;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-style: bold;
+    font-weight: bold;
     bottom: 0;
 }
-
 
 .footer ul li a{
     color: inherit;
@@ -256,7 +250,7 @@ header ul li button.connect
     padding: 0 15px;
     opacity: 13;
     color: #4b4c4d;
-    font-style: bold;
+    font-weight: bold;
 }
 
 
@@ -272,9 +266,6 @@ header ul li button.connect
 
 /* End of footer */
 
-
-
-
 /* Back to top */
 .back-to-top {
     position: fixed;
@@ -284,7 +275,7 @@ header ul li button.connect
     height: 48px;
     border-radius: 4px;
     color: #fff;
-    background-color: var(--main-color);
+    /*background-color: var(--main-color);*/
     text-align: center;
     line-height: 49px;
     z-index: 99;
@@ -295,7 +286,7 @@ header ul li button.connect
     animation: backto-top-bounce 4s infinite ease-in-out;
   }
   .back-to-top:hover {
-    box-shadow: 0px 3px 7px 0px rgba(254, 242, 46, 0.35);
+    box-shadow: 0 3px 7px 0 rgba(254, 242, 46, 0.35);
   }
   @keyframes backto-top-bounce {
     0% {
@@ -337,7 +328,7 @@ header ul li button.connect
 
 .dropdown a{
     border: none;
-  padding: 15px 34px;
+  /*padding: 15px 34px;*/
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -345,42 +336,32 @@ header ul li button.connect
   width: 100%;
   margin: 4px 2px;
   cursor: pointer;
-    text-decoration: none;
     padding: 6px 20px;
-    font-family: Noto Sans;
+    font-family: "Noto Sans", sans-serif;
     background-color:  #e88845;
     color: #fff;
 }
 
 .dropdown-content {
-
     background-color: inherit;
     display: none;
     position: absolute;
     width: auto;
     overflow: auto;
-
-
 }
-
 
 .dropdown:hover .dropdown-content {
     overflow-x: hidden;
     display: block;
-
-
 }
 
-
 .dropdown-content a {
-    font-family: Noto Sans;
+    font-family: 'Noto Sans', sans-serif;
     display: block;
     color: #000000;
-    border-radius: 0%;
+    border-radius: 0;
     padding: 10px;
     text-decoration: none;
-
-
 }
 
 .dropdown-content a:hover {
@@ -393,7 +374,7 @@ header ul li button.connect
 .head{
     height: 100vh;
     display: flex;
-    justify-self: space-between;
+    justify-self: stretch;
     align-items: center;
     flex-direction: column;
 }
@@ -404,7 +385,7 @@ div .Text{
     top: 80px;
     text-align: center;
     font-size: 30px;
-    font-family: Noto Sans;
+    font-family: "Noto Sans", sans-serif;
     color: rgb(58, 75, 61);
   text-shadow:
       0 0 7px #fff,
@@ -434,11 +415,11 @@ div .Text{
     .topnav a, .topnav input[type=text] {
       float: none;
       display: block;
-      text-align: left;
+        position: absolute;
+        text-align: left;
       width: 100%;
       margin: 0;
       padding: 14px;
-      display: absolute;
       top: 60px;
     }
     
@@ -461,16 +442,14 @@ div .Text{
 }
 
 .flex-box{
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 
 .Leaderboard{
-    display: flexbox;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -488,7 +467,7 @@ div .Text{
     font-size: 2rem;
     overflow: hidden;
     background-color: #DF7861;
-    font-family: baloo bhai;
+    font-family: "baloo bhai", sans-serif;
 }
 .content-table thead{
     border-radius: 1em;
@@ -507,9 +486,6 @@ div .Text{
     padding: 14px 50px;
 }
 
-
-
-
 .content-table tbody tr:nth-child(even){
     background-color: #FCF8E8;
 }
@@ -526,7 +502,7 @@ div .Text{
         font-size: 2rem;
         overflow: hidden;
         background-color: #DF7861;
-        font-family: baloo bhai;
+        font-family: "baloo bhai", sans-serif;
     }
 }
     
