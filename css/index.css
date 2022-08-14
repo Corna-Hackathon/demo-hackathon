@@ -18,7 +18,9 @@ body {
     overflow-x: hidden;
     margin: 0;
     width: auto;
-    background: linear-gradient(to top, #3A6B35, #E3B448, #CBD18F) no-repeat fixed;
+    background: linear-gradient(to top, #3A6B35, #E3B448, #CBD18F) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
 }
 /* Header */
@@ -385,7 +387,7 @@ main div .circle_right {
 }
 .sketch_data{
     height: 100vh;
-    background: linear-gradient(#E3B448, #CBD18F);
+    background: inherit;
     width: auto;
     /*position: flex;*/
     display: flex;
@@ -468,6 +470,8 @@ div .rec_right{
     flex-wrap:wrap;
     justify-content:space-between;
     margin-left: 10px;
+    background-color: rgb(159, 187, 173);
+    font-family: Arial, Helvetica, sans-serif;
 }
 .single-blog{
     flex-basis:390px;

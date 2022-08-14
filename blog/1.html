@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="blog.css">
+        <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <title>News</title>
+    </head>
+<body>
+    <header>
+        <a href="/index.html"><img src="/assets/logo.png" alt="logo" class="logo"> </a>
+        <!-- <a href="#" class="logo"><img src="/assets/logo.png" alt="logo"> </a> -->
+        <ul class="nav_links">
+            <li><a href="/index.html" class="Home"> <strong>Home</strong></a></li>
+            <li><a href="/news.html" class="news"><strong>News</strong></a></li>
+            <li><a href="/podcast.html"class="podcast"><strong>Podcast</strong></a></li>
+            <!-- <li><a href="/market.html" class="market"><strong>Marketplace</strong></a></li> -->
+            <li> <div class="dropdown">
+                <a> <strong> More </strong> <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="/charity.html">Charity</a>
+                    <a href="/leaderboard.html">LeaderBoard</a>
+                </div>
+              </div> </li>
+            <script src="/js/activePage.js"> </script>
+            
+            <li> <button class="button"> <strong>Connect</strong></button></li>
+        </ul>
+        <img src="assets/menu-btn.png" alt="menu button" class="menu-btn">
+
+    </header>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navlinks = document.querySelector('.nav_links');
+
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile_menu');
+        });
+    </script>
+
+    <div class="container">
+
+
+        <div class="hero">
+
+        </div>
+        <main style="margin-top: 100px;">
+        <h2>Binance Là Gì? Hướng Dẫn Sử Dụng Sàn Binance (2022)</h2>
+        <div class="profile-container">
+            <div class="profile">
+                <div class="img-container">
+
+                </div>
+                <div class="text">
+                    <h3>Admin</h3>
+                    <p>August 12, 2022</p>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+
+            <h4>Binance Là Gì?</h4> <br>
+            <p>Binance là sàn giao dịch crypto (tiền điện tử/ tiền mã hóa) được thành lập vào năm 2017 bởi Changpeng Zhao tại Trung Quốc. Hiện tại, Binance là sàn giao dịch tiền điện tử lớn nhất thế giới về khối lượng giao dịch với hơn 1000 cặp giao dịch. Người đứng đầu Binance là Changpeng Zhao (hay còn gọi là CZ).</p>
+
+
+            <br>
+
+            <h4>Hướng Dẫn Sử Dụng Sàn Binance</h4> <br>
+
+            <p>Hãy bắt đầu với 5 bước nhanh chóng và dễ dàng: </p>
+            <ul>  
+                <li>Bước 1: Đăng ký tài khoản Binance</li>
+                <li>Bước 2: Hoàn tất xác minh</li>
+                <li>Bước 3: Nạp tiền mã hóa</li>
+                <li>Bước 4: Mua tiền mã hóa</li>
+                <li>Bước 5: Khám phá các sản phẩm của Binance</li>
+            </ul>
+            
+            </main>
+
+        </div>
+        <div class="footer" >
+            <ul class="socials">
+                <li><a href=""> <i class="fa fa-facebook"></i> </a></li>
+                <li><a href=""> <i class="fa fa-twitter"></i> </a> </li>
+                <li><a href=""> <i class="fa fa-youtube"></i> </a> </li>
+                <li><a href=""> <i class="fa fa-github"></i> </a></li>
+            </ul>
+        <ul class="list">
+            <li>
+                <a href="#"><strong>Home</strong></a>
+            </li>
+            <li>
+                <a href="/news.html"> <strong>New</strong> </a>
+            </li>
+            <li>
+                <a href="/podcast.html"> <strong>Podcast</strong></a>
+            </li>
+            <li>
+                <a href="market.html"> <strong>Marketplace</strong></a>
+            </li>
+        </ul>
+
+        <article class="copyright">
+            Corna Coders &copy; 2022
+        </article>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+<a href="#" class="to_top">
+    <i class="fa fa-chevron-up"></i>
+    <script src="/js/to_top.js"> </script>
+</a>
+</body>
+</html>
