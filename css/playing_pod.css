@@ -461,3 +461,48 @@ header ul li button.connect
 .play-repeat {
     font-size: 20px;
 }
+
+.dropdown a{
+    border: none;
+    /*padding: 15px 34px;*/
+    padding: 6px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    width: 100%;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: "Noto Sans", sans-serif;
+    background-color:  #e88845;
+    color: #fff;
+}
+.dropdown-content {
+
+    background-color: inherit;
+    display: none;
+    position: absolute;
+    width: auto;
+    overflow: auto;
+
+
+}
+.dropdown:hover .dropdown-content {
+    overflow-x: hidden;
+    display: block;
+
+
+}
+.dropdown-content a {
+    font-family: "Noto Sans", sans-serif;
+    display: block;
+    color: #000000;
+    border-radius: 0;
+    padding: 10px;
+    text-decoration: none;
+}
+.dropdown-content a:hover {
+    background-color: #bb6c69;
+    color: #fff;
+
+}

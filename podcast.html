@@ -13,11 +13,15 @@
     <!-- Favicon-->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <link rel="icon" href="assets/logo.png">
-    <title>Main</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Podcast</title>
 </head>
 <body>
     <header>
-        <a href="#"><img src="/assets/logo.png" alt="logo" class="logo"> </a>
+        <a href="index.html"><img src="/assets/logo.png" alt="logo" class="logo"> </a>
         <!-- <a href="#" class="logo"><img src="/assets/logo.png" alt="logo"> </a> -->
         <ul class="nav_links">
             <li><a href="/index.html" class="Home"> <strong>Home</strong></a></li>
@@ -121,6 +125,85 @@
         <script src="/js/to_top.js"> </script>
     </a>
 
+    <div class="big-flexbox">
+        <div class="podcast">
+            <div class="podcast-box" onclick="playPodcast()">
+                <div class="pod-thumb">
+                    <img src="./assets/eod1sdcagbh74clmo4it.webp" alt="" />
+                </div>
+                <h3 class="pod-name">Budgeting Radio</h3>
+                <div class="box-info">
+                    <h3 class="pod-author">Bui Tung</h3>
+                    <div class="like-button">
+                        <ion-icon name="heart-outline"></ion-icon>
+                        <h3 class="like-numb">789</h3>
+                    </div>
+                </div>
+            </div>
 
+            <div class="podcast-box" onclick="playPodcast()">
+                <div class="pod-thumb">
+                    <img src="./assets/Tame_Impala_-_Currents.png" alt="" />
+                </div>
+                <h3 class="pod-name">What Is Blockchain</h3>
+                <div class="box-info">
+                    <h3 class="pod-author">Livio Kopp</h3>
+                    <div class="like-button">
+                        <ion-icon name="heart-outline"></ion-icon>
+                        <h3 class="like-numb">123</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="podcast-box" onclick="playPodcast()">
+                <div class="pod-thumb">
+                    <img src="./assets/podcastImg.png" alt="" />
+                </div>
+                <h3 class="pod-name">Podcast 3</h3>
+                <div class="box-info">
+                    <h3 class="pod-author">Marc Marco</h3>
+                    <div class="like-button">
+                        <ion-icon name="heart-outline"></ion-icon>
+                        <h3 class="like-numb">271</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="trending-side">
+            <div>
+                <h2 class="trend-name">Trending searches</h2>
+                <div class="">
+                    <ul class="trending-list">
+                        <li class="trending-name">
+                            <span>Elon Musk's Mindset</span>
+                            <span><ion-icon name="chevron-forward-outline"></ion-icon></span>
+                        </li>
+                        <li class="trending-name">
+                            <span>YOLO lifestyle</span>
+                            <span><ion-icon name="chevron-forward-outline"></ion-icon></span>
+                        </li>
+                        <li class="trending-name">
+                            <span>Investment Sites</span>
+                            <span><ion-icon name="chevron-forward-outline"></ion-icon></span>
+                        </li>
+                        <li class="trending-name">
+                            <span>Stocks and Bonds</span>
+                            <span><ion-icon name="chevron-forward-outline"></ion-icon></span>
+                        </li>
+                        <li class="trending-name">
+                            <span>Bitcoin Rising</span>
+                            <span><ion-icon name="chevron-forward-outline"></ion-icon></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="./js/podcast.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
+
+
