@@ -30,9 +30,9 @@
                 <button type="submit" class="submit-btn" id="submit">Log In</button>
             </form>
             <form id="register" class="input-group">
-                <input type="text" class="input-field" placeholder="Username" onkeyup="daoNutDN_2()" id="user" required autofocus>
-                <input type="email" class="input-field" placeholder="Email" onkeyup="daoNutDN_2()" id="mail" required autofocus>
-                <input type="text" class="input-field" placeholder="Enter Password" onkeyup="daoNutDN_2()" id="pass" required autofocus>
+                <input type="text" class="input-field" placeholder="Username" onkeyup="daoNutDN_2()" id="user1" required autofocus>
+                <input type="email" class="input-field" placeholder="Email" onkeyup="daoNutDN_2()" id="mail1" required autofocus>
+                <input type="text" class="input-field" placeholder="Enter Password" onkeyup="daoNutDN_2()" id="pass1" required autofocus>
                 <input type="checkbox" class="check-box"> <span>I agree to the Terms & Conditions</span>
                 <button type="submit" class="submit-btn" id="submit-reg">Register</button>
             </form>
@@ -71,9 +71,9 @@
 
         function daoNutDN_2(){
             
-        var u = document.getElementById("user").value;
-        var p = document.getElementById("pass").value;
-        var k = document.getElementById("mail").value;
+        var u = document.getElementById("user1").value;
+        var p = document.getElementById("pass1").value;
+        var k = document.getElementById("mail1").value;
         if  (u.length>0 && p.length>0 && k.length > 0) {
             document.getElementById("submit-reg").disabled=false;
 
