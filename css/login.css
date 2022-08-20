@@ -57,7 +57,7 @@ body {
 }
 
 .input-group{
-    top: 180px;
+    top: 160px;
     position: absolute;
     width: 280px;
     transform: .5s;
@@ -119,4 +119,6 @@ span{
     position: absolute;
     bottom: 0;
     margin-left: 42%;
+    padding-top:10px;
+    cursor: pointer;
 }
