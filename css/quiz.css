@@ -18,10 +18,9 @@ body {
     overflow-x: hidden;
     margin: 0;
     width: auto;
-    background-image: url(/assets/back.png);
+    background: linear-gradient(to top, #7EE8FA, #EEC0C6) ;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-family: Arial, Helvetica, sans-serif;
 
 }
 /* Header */
@@ -36,10 +35,11 @@ header {
     justify-content: space-between;
     align-items: center;
     font-family: Arial Bold,  'Arial Narrow Bold', sans-serif;
-    background: linear-gradient(to left, #f48f3c, #bb6c69);
+    background: linear-gradient(to right, #7EE8FA, #EEC0C6);
     height: 70px;
     border-radius: 2px;
 }
+
 main {
     width: 100%;
 

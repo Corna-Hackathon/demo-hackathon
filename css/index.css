@@ -18,7 +18,7 @@ body {
     overflow-x: hidden;
     margin: 0;
     width: auto;
-    background: linear-gradient(to top, #3A6B35, #E3B448, #CBD18F) ;
+    background: linear-gradient(to top, #7EE8FA, #EEC0C6) ;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
@@ -35,7 +35,7 @@ header {
     justify-content: space-between;
     align-items: center;
     font-family: Arial Bold,  'Arial Narrow Bold', sans-serif;
-    background: linear-gradient(to left, #f48f3c, #bb6c69);
+    background: linear-gradient(to right, #7EE8FA, #EEC0C6);
     height: 70px;
     border-radius: 2px;
 }

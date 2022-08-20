@@ -111,3 +111,9 @@ span{
     transition: .5s;
 
 }
+
+.back-to-last {
+    position: relative;
+    font-size: 50px;
+    text-align: center;
+}

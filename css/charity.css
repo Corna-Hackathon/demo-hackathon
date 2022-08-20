@@ -13,18 +13,16 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding-bottom: 203.8px;
+    padding-bottom: 204px;
     position: relative;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     overflow-x: hidden;
     margin: 0;
     width: auto;
-    background: #94B49F;
+    background: linear-gradient(to top, #7EE8FA, #EEC0C6) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
 }
-
-
 /* Header */
 header {
     position: fixed;
@@ -37,11 +35,11 @@ header {
     justify-content: space-between;
     align-items: center;
     font-family: Arial Bold,  'Arial Narrow Bold', sans-serif;
-    background: linear-gradient(to left, #f48f3c, #bb6c69);
+    background: linear-gradient(to right, #7EE8FA, #EEC0C6);
     height: 70px;
     border-radius: 2px;
-
 }
+
 
 main {
     width: 100%;
