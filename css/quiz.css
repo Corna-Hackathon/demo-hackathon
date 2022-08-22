@@ -286,7 +286,7 @@ header ul li button.connect{
     transition: all 0.3s ease;
 }
 .quiz_box{
-    width: 550px;
+    width: 1500px;
     background: #fff;
     border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);
