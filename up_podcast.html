@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/upload.css">
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<!--    <link rel="stylesheet" href="css/font-awesome.min.css">-->
+    <script src="https://kit.fontawesome.com/1657b8a72e.js" crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
+    <title>LeaderBoard</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="/assets/logo.png" alt="logo" class="logo"> </a>
+        <!-- <a href="#" class="logo"><img src="/assets/logo.png" alt="logo"> </a> -->
+        <ul class="nav_links">
+            <li><a href="/index.html" class="Home"> <strong>Home</strong></a></li>
+            <li><a href="/news.html" class="news"><strong>News</strong></a></li>
+            <li><a href="/podcast.html"class="podcast"><strong>Podcast</strong></a></li>
+            <!-- <li><a href="/market.html" class="market"><strong>Marketplace</strong></a></li> -->
+            <li> <div class="dropdown">
+                <a> <strong> More </strong> <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="/charity.html">Charity</a>
+                    <a href="/leaderboard.html">LeaderBoard</a>
+                </div>
+              </div> </li>
+            <script src="/js/activePage.js"> </script>
+            
+            <li> <button class="button" onclick="location='/login.html'"> <strong>Login</strong></button></li>
+        </ul>
+        <img src="assets/menu-btn.png" alt="menu button" class="menu-btn">
+
+    </header>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navlinks = document.querySelector('.nav_links');
+
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile_menu');
+        });
+    </script>
+
+
+    <div class="back-to-top">
+        <span class="back-top"><i class="fa fa-angle-up"></i></span>
+    </div>
+
+
+    <a href="#" class="to_top">
+        <i class="fa fa-chevron-up"></i>
+        <script src="/js/to_top.js"> </script>
+    </a>
+
+    <div class="wrapper">
+        <h2>File Uploader Mp3 + Thumbnail</h2>
+        <form action="#">
+            <input type="file" class="file-input" hidden>
+            <i class="fas fa-cloud-upload-alt"></i>
+            <p>Browse File To Upload</p>
+        </form>
+        <section class="progress-area">
+            <li class="row">
+                <i class="fas fa-file-alt"></i>
+                <div class="content">
+                    <div class="details">
+                        <span class="name">image1.png • Uploading</span>
+                        <span class="percent">50%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </li>
+        </section>
+        <section class="uploaded-area">
+            <li class="row">
+                <div class="content">
+                    <i class="fas fa-file-alt"></i>
+                    <div class="details">
+                        <span class="name">image1.png • Uploaded</span>
+                        <span class="percent">100%</span>
+                    </div>
+                </div>
+                <i class="fas fa-check"></i>
+            </li>
+            
+        </section>
+    </div>
+
+      <script src="/js/upload.js"></script>
+</body>
+</html>
