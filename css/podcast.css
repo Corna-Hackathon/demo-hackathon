@@ -13,7 +13,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding-bottom: 204px;
     position: relative;
     overflow-x: hidden;
     margin: 0;
@@ -21,6 +20,7 @@ body {
     background: linear-gradient(to top, #7EE8FA, #EEC0C6) ;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    height: fit-content;
 
 }
 /* Header */
@@ -43,6 +43,7 @@ header {
 
 main {
     width: 100%;
+    height: auto;
 
 }
 .logo {
@@ -171,14 +172,16 @@ header ul li button.connect
 
 /* Footer */
 .footer{
-    position: absolute;
+    /* position: absolute; */
     text-align: center;
     background-color:rgb(248, 244, 244);
     padding: 40px;
-    bottom: 0;
+    /* bottom: 0; */
     width: 100%;
     height: auto;
     font-family: "Open Sans", sans-serif;
+    margin-top:40px;
+
 }
 
 
@@ -362,11 +365,8 @@ header ul li button.connect
 }
 
 .dropdown-content a:hover {
-
-
     background-color: #bb6c69;
     color: #fff;
-
 }
 
 
@@ -443,18 +443,18 @@ header ul li button.connect
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.podcast {
-    width: 100%;
+.podcastt {
+    width: auto;
     height: auto;
-    gap: 1%;
-    display: flex;
+    display: grid;
     position: relative;
-    margin-top: 30px;
     margin-left: 20px;
-    
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .podcast-box{ 
+    height: 289px;
+    width: 190px;
     cursor: pointer;
     position: relative ;
     margin: 10px;
@@ -462,14 +462,14 @@ header ul li button.connect
     background-color: #fff;
     box-shadow: rgba(200, 200, 216, 0.2) 2px 9px 40px 0;
     padding: 15px 15px 30px;
-    width: 190px;
     float: left;
+    
 }
 
 .podcast-box:hover {
     box-shadow: 2px 7px 15px 10px rgb(0 0 0 / 0.2);
     transition: all 0.5s ease-out;
-    background-color: rgb(241, 237, 237);
+    background-color: white;
 }
 
 .pod-thumb {
@@ -522,7 +522,6 @@ header ul li button.connect
 
 }
 
-
 .dropdown a{
     border: none;
     /*padding: 15px 34px;*/
@@ -573,15 +572,20 @@ header ul li button.connect
     display: flex;
     position: relative;
     margin: 20px;
-    background-color: #ff3772;
+    background: linear-gradient(to bottom, #7EE8FA, #EEC0C6);
     padding: 10px;
     height: 290px;
     border-radius: 8px;
 }
 
+.main-pod {
+    position: relative;
+}
+
 .big-flexbox {
     display: flex;
-    position: relative;
+    gap: 15px;
+    justify-content: space-between;
 }
 
 .trend-name{
@@ -589,7 +593,7 @@ header ul li button.connect
     padding: 10px;
     width: 300px;
     text-align: center;
-    color: #fff;
+    color: black;
 }
 
 .trending-list {
@@ -606,7 +610,7 @@ header ul li button.connect
     justify-content: space-between;
     background: rgba(255,255,255,.1);
     padding: 5px 10px;
-    color: #fff;
+    color: black;
     margin: 5px 0;
     transition: .5s;
     font-family: Arial Bold,  'Arial Narrow Bold', sans-serif;
@@ -634,4 +638,66 @@ header ul li button.connect
 .trending-name span:nth-child(1)
 {
     text-align: right;
+}
+
+.side-col{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    position: relative;
+
+}
+.upload-box{
+    display: flex;
+    position: relative;
+    margin: 20px;
+    background: linear-gradient(to bottom, #7EE8FA, #EEC0C6);
+    padding: 10px;
+    height: 180px;
+    border-radius: 8px;
+    /* z-index: -1; */
+    flex-direction: column;
+    width:180px;
+    align-items: center;
+    width: 180px;
+    margin-top: 30px;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.upload-text {
+    font-family: Arial Bold,  'Arial Narrow Bold', sans-serif;
+    padding: 10px;
+    width: 300px;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    height: 25px;
+    position: relative;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+}
+
+.inner-box {
+    position: relative;
+    box-shadow: inset 0 0 15px rgba(0,0,0,.5);
+    width: 80px;
+    height: 80px;
+    display:flex;
+    padding:10px;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+.category {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-left: 30px;
 }
