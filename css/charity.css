@@ -331,20 +331,20 @@ header ul li button.connect
 
 .dropdown a{
     border: none;
-  /*padding: 15px 34px;*/
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  width: 100%;
-  margin: 4px 2px;
-  cursor: pointer;
+    /*padding: 15px 34px;*/
     padding: 6px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    width: 100%;
+    margin: 4px 2px;
+    cursor: pointer;
     font-family: "Noto Sans", sans-serif;
     background-color:  #e88845;
     color: #fff;
+    border-radius: 15px;
 }
-
 .dropdown-content {
 
     background-color: inherit;
@@ -352,37 +352,33 @@ header ul li button.connect
     position: absolute;
     width: auto;
     overflow: auto;
+    border-radius: 15px;
 
 
 }
-
-
 .dropdown:hover .dropdown-content {
     overflow-x: hidden;
     display: block;
 
 
 }
-
-
 .dropdown-content a {
     font-family: "Noto Sans", sans-serif;
     display: block;
-    color: #000000;
+    color: #fff;
     border-radius: 0;
     padding: 10px;
     text-decoration: none;
-
-
+    border-radius: 15px;
 }
-
 .dropdown-content a:hover {
+    background-color: yellow;
+    color: #000;
+    border-radius: 15px;
 
-
-    background-color: #bb6c69;
-    color: #fff;
 
 }
+
 
 
 .head{
@@ -397,6 +393,7 @@ header ul li button.connect
 div .Text{
     position: relative;
     top: 80px;
+    text-transform: uppercase;
     text-align: center;
     font-size: 30px;
     font-family: "Noto Sans", sans-serif;

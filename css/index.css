@@ -172,24 +172,18 @@ header ul li button.connect{
 .footer .socials {
     display: flex!important;
     justify-content: center;
-    padding-bottom: 25px;
+    padding-bottom: 50px;
     color: #4b4c4d;
 }
 .footer .socials a{
-    position: relative;
     text-align: center;
-    font-size: 24px;
-    color:inherit;
-    border: 1px solid #ccc;
-    width: 40px;
-    height: 40px;
-    line-height: 38px;
-    border-radius: 50%;
-    margin: 0 33px;
-    opacity: 0.75;
+    width: 50%;
+    height: 50%;
+    opacity: 2;
 }
 .footer .socials a:hover{
     opacity: 2;
+    color: #6558db;
 }
 .footer ul{
     list-style: none;
@@ -210,8 +204,8 @@ header ul li button.connect{
 }
 .footer ul li{
     display: inline-block;
-    padding: 0 15px;
-    transition: 0.5s ease-in-out;
+    padding: 0 30px;
+    transition: 0.5s;
 }
 .footer ul li a:hover{
     display: inline-block;
@@ -569,6 +563,7 @@ div .rec_right{
     font-family: "Noto Sans", sans-serif;
     background-color:  #e88845;
     color: #fff;
+    border-radius: 15px;
 }
 .dropdown-content {
 
@@ -577,6 +572,7 @@ div .rec_right{
     position: absolute;
     width: auto;
     overflow: auto;
+    border-radius: 15px;
 
 
 }
@@ -589,14 +585,17 @@ div .rec_right{
 .dropdown-content a {
     font-family: "Noto Sans", sans-serif;
     display: block;
-    color: #000000;
+    color: #fff;
     border-radius: 0;
     padding: 10px;
     text-decoration: none;
+    border-radius: 15px;
 }
 .dropdown-content a:hover {
-    background-color: #bb6c69;
-    color: #fff;
+    background-color: yellow;
+    color: #000;
+    border-radius: 15px;
+
 
 }
 
