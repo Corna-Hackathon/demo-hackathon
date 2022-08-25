@@ -177,7 +177,7 @@ header ul li button.connect
 
 /* Footer */
 .footer{
-    position: absolute;
+    /* position: absolute; */
     text-align: center;
     background-color:rgb(248, 244, 244);
     padding: 40px;
@@ -454,7 +454,7 @@ header ul li button.connect
     display: grid;
     position: relative;
     margin-left: 20px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .podcast-box{ 
@@ -585,6 +585,7 @@ header ul li button.connect
 
 .main-pod {
     position: relative;
+    margin-bottom: 10px;
 }
 
 .big-flexbox {
