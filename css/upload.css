@@ -224,6 +224,7 @@ body{
 .wrapper{
     width: 500px;
     padding: 30px;
+    margin-top: 50%;
     background: #fff;
 }
 

@@ -1,6 +1,11 @@
 :root {
     --top_var: 31%;
 }
+
+@font-face{
+    font-family: vcl;
+    src: url(../formatype-foundry-biofolio-ultimate-book-demo.otf) format("openType");
+}
 *{
     margin: 0;
     padding: 0;
@@ -693,7 +698,7 @@ header ul li button.connect
 
 
 .category {
-    font-family: 'Open Sans', sans-serif;
+    font-family: vcl;
     font-weight: 700;
     padding-top: 20px;
     padding-left: 30px;

@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+@font-face {
+    font-family: Ditmemay;
+    src: url(../Nebula-Hollow.otf) format("opentype");
+    
+}
+
+@font-face{
+    font-family: vcl;
+    src: url(../formatype-foundry-biofolio-ultimate-book-demo.otf) format("openType");
+}
+@font-face {
+    font-family: bruh;
+    src: url(../formatype-foundry-biofolio-ultimate-extrabold-demo.otf) format("openType");
+}
+
 :root {
     --top_var: 31%;
 }
@@ -18,7 +33,7 @@ body {
     overflow-x: hidden;
     margin: 0;
     width: auto;
-    background: linear-gradient(to top, #7EE8FA, #EEC0C6) ;
+    background: linear-gradient(#202020, #676767 );
     background-repeat: no-repeat;
     background-attachment: fixed;
 
@@ -35,7 +50,8 @@ header {
     justify-content: space-between;
     align-items: center;
     font-family: Arial Bold,  'Arial Narrow Bold', sans-serif;
-    background: linear-gradient(to right, #7EE8FA, #EEC0C6);
+    background:linear-gradient(to right,  #FFE56F, #A9FF9F);
+
     height: 70px;
     border-radius: 2px;
 }
@@ -75,7 +91,7 @@ header ul li{
 
 }
 header ul li a{
-    color: #fff;
+    color: #202020;
     text-decoration: none;
     padding: 6px 15px;
     border-radius: 15px;
@@ -123,14 +139,14 @@ header ul li button.connect{
     overflow: hidden;
     cursor: pointer;
     border: 1px;
-    background: #6558db;
+    background: #e88845;
     color: white;
     font-weight: 500;
     font-family: "noto sans", sans-serif;
     transition: box-shadow 0.5s ease-in-out, border-color 0.5s ease-in-out;
 }
 .button:hover {
-    background-color: #6558db;
+    background-color: #e88845;
     color: #fff;
     box-shadow: 0 0 5px #6558db,
     0 0 20px rgba(76, 0, 255, 0.596),
@@ -146,20 +162,19 @@ header ul li button.connect{
     font-size: 20px;
     overflow: hidden;
     cursor: pointer;
-    border: 2px solid #6558db;
-    background: #6558db;
+    background: #e88845;
     color: #000;
     font-weight: 600;
+    color: #fff;
     transition: box-shadow 0.5s ease-in-out, border-color 0.5s ease-in-out;
 }
 .button:hover {
-    background-color: #6558db;
+    background-color: rgb(168, 36, 36);
     color: #000;
-    box-shadow: 0 0 5px #6558db,
+    box-shadow: 0 0 5px rgb(168, 36, 36),
     0 0 20px rgb(24.75 21.57 53.68 / 0.8),
     0 0 35px rgb(24.75 21.57 53.68 / 0.7),
     0 0 50px rgb(24.75 21.57 53.68 / 0.6);
-    border-color: #fff;
 }
 /* End of header */
 
@@ -294,9 +309,9 @@ main h2.text {
     top: 10%;
     left: 9%;
     color: #fff;
-    font-size: 4em;
+    font-family: Ditmemay;
+    font-size: 5rem;
     text-transform: uppercase;
-    font-family: Arial Bold,  'Arial Narrow Bold', sans-serif;
 }
 main img.corn {
     position: absolute;
@@ -311,7 +326,7 @@ main h3.quote{
     color: #fff;
     font-size: 2em;
     text-transform: uppercase;
-    font-family: Arial Bold,  'Arial Narrow Bold', sans-serif;
+    font-family: vcl;
     position: absolute;
     bottom: 73%;
     left: 9%;
@@ -332,7 +347,7 @@ main button.start{
     transition: ease-out 0.3s;
     font-size: 24px;
     text-transform: uppercase;
-    font-family: Arial Bold,  'Arial Narrow Bold', sans-serif;
+    font-family: bruh;
     outline: none;
 
 }
@@ -358,7 +373,7 @@ main div .circle_left {
     position: absolute;
     top: 500px;
     right: 1600px;
-    background:linear-gradient( coral, yellow);
+    background:linear-gradient( #FFE56F, #A9FF9F);
     display: inline;
     margin: 10px;
     z-index: -1;
@@ -373,7 +388,8 @@ main div .circle_right {
     align-items: flex-start;
     top: 140px;
     left: 1300px;
-    background: linear-gradient(coral, yellow);
+    background:linear-gradient(to right,  #FFE56F, #A9FF9F);
+
     display: inline-block;
     margin: 10px;
     z-index: -1;
@@ -456,7 +472,8 @@ div .rec_right{
     bottom: 29%;
 }
 .bruh {
-    background: linear-gradient(to top, #5d5d81, #bfcde0, #3b3555);
+    background: linear-gradient(#202020, #676767 );
+
     font-family: poppins, sans-serif;
 }
 .wrapper{
@@ -477,7 +494,7 @@ div .rec_right{
     flex-basis:390px;
     border:1px solid #eee;
     border-radius: 8px;
-    background-color: #eeee;
+    background-color: white;
 }
 .blog-img{
     position:relative;
@@ -651,3 +668,73 @@ div .rec_right{
     color: #0f5132;
     background-color: #94df93;
 }
+
+
+.content .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 100;
+    background-color: white;
+    width: 800px;
+    font-size: 20px;
+    max-width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+  .content .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+
+  }
+  
+  .content .modal-header {
+    padding: 10px 15px;
+    display: flex;
+    font-size: 34px;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid black;
+  }
+  
+  .content .modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .content .modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .content .modal-body {
+    padding: 10px 15px;
+  }
+  
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+    background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  }
