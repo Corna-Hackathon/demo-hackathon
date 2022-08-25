@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/after.css">
+   <link rel="stylesheet" href="css/game.css">
     <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Podcast</title>
+    <title>Game</title>
 </head>
 <body>
     <header>
@@ -30,7 +30,7 @@
               </div> </li>
             <script src="/js/activePage.js"> </script>
             
-            <li> <button class="button"> <strong>Login</strong></button></li>
+            <li> <button class="button" onclick="location='/login.html'"> <strong>Login</strong></button></li>
         </ul>
         <img src="assets/menu-btn.png" alt="menu button" class="menu-btn">
 
@@ -44,34 +44,39 @@
             navlinks.classList.toggle('mobile_menu');
         });
     </script>
+    <main>
 
+</main>
+    <div class="footer" >
+        <ul class="socials">
+            <li><a href=""> <i class="fa fa-facebook"></i> </a></li>
+            <li><a href=""> <i class="fa fa-twitter"></i> </a> </li>
+            <li><a href=""> <i class="fa fa-youtube"></i> </a> </li>
+            <li><a href=""> <i class="fa fa-github"></i> </a></li>
+        </ul>
+    <ul class="list">
+        <li>
+            <a href="#"><strong>Home</strong></a>
+        </li>
+        <li>
+            <a href="/news.html"> <strong>New</strong> </a>
+        </li>
+        <li>
+            <a href="/podcast.html"> <strong>Podcast</strong></a>
+        </li>
+        <li>
+            <a href="market.html"> <strong>Marketplace</strong></a>
+        </li>
+    </ul>
 
-    <div class="podcast">
-        <div class="text_header">
-            <h2> <strong>Quiz</strong></h2>
-        </div>
+    <article class="copyright">
+        Corna Coders &copy; 2022
+    </article>
+</div>
 
-
-        <div class="flex-box">
-            <div class="podcasts">
-                <img src="assets/blog-img/one.jpg" alt="" class="name-pod">
-                <div class="bruh">
-                    <h3>Budgeting Radio</h3>
-                    <br>
-                    <p style="font-size: 13px;">Learn how to manage your expenses, savings and investment. </p>
-                </div>
-
-            </div>
-            <div class="finish">
-                <h3> <strong> You have listened to this podcast.  Click here to start the quiz  </strong></h3>
-            </div>
-            <button class="start-button" onclick="got()">Start</button>
-            <script>
-                function got() {
-                    window.location.href = "quizz.html";
-                }
-            </script>
-        </div>
-    </div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
