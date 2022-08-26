@@ -1,18 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 @font-face {
+<<<<<<< HEAD
     font-family: Nebula;
     src: url(../Nebula-Hollow.otf) format("opentype");
+=======
+    font-family: Ditmemay;
+    src: url(../assets/web-font/Nebula-Hollow.otf) format("opentype");
+>>>>>>> 97ad514967a6ab2507b352027347efe2b276bc1a
     
 }
 
 @font-face{
+<<<<<<< HEAD
     font-family: book-demo;
     src: url(../formatype-foundry-biofolio-ultimate-book-demo.otf) format("openType");
 }
 @font-face {
     font-family: foundry;
     src: url(../formatype-foundry-biofolio-ultimate-extrabold-demo.otf) format("openType");
+=======
+    font-family: vcl;
+    src: url(../assets/web-font/formatype-foundry-biofolio-ultimate-book-demo.otf) format("openType");
+}
+@font-face {
+    font-family: bruh;
+    src: url(../assets/web-font/formatype-foundry-biofolio-ultimate-extrabold-demo.otf) format("openType");
+>>>>>>> 97ad514967a6ab2507b352027347efe2b276bc1a
 }
 
 :root {

@@ -459,6 +459,7 @@ div .Text{
     overflow: hidden;
     background-color: #DF7861;
     font-family: "baloo bhai", sans-serif;
+    width: 1200px;
 }
 .content-table thead{
     border-radius: 1em;
@@ -469,12 +470,14 @@ div .Text{
     border-radius: 1em;
     text-align: left;
     font-weight: bold;
+    text-align: center;
     
 }
 
 .content-table th,
 .content-table td{
     padding: 14px 50px;
+    text-align: center;
 }
 
 .content-table tbody tr:nth-child(even){
