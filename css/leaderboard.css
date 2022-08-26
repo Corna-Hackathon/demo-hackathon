@@ -81,7 +81,7 @@ header ul li a{
     text-decoration: none;
     padding: 6px 15px;
     border-radius: 15px;
-
+    transition: all 0.5s ease-in-out;
 }
 header ul li a:hover {
     color: #000;
@@ -201,7 +201,7 @@ header ul li button.connect{
     position: relative;
     color: #6558db;
     transform: translateX(-3px);
-    top: -10px;
+    /* top: -10px; */
 }
 .footer ul{
     display: flex;
@@ -248,7 +248,7 @@ header ul li button.connect{
 .footer .list li:hover {
     position: relative;
     text-shadow: 1px 0px #4b4c4d;
-    top:-10px;
+    /* top:-10px; */
 }
 
 .footer .copyright{
