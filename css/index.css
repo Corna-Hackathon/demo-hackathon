@@ -1,32 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 @font-face {
-<<<<<<< HEAD
     font-family: Nebula;
-    src: url(../Nebula-Hollow.otf) format("opentype");
-=======
-    font-family: Ditmemay;
     src: url(../assets/web-font/Nebula-Hollow.otf) format("opentype");
->>>>>>> 97ad514967a6ab2507b352027347efe2b276bc1a
     
 }
 
 @font-face{
-<<<<<<< HEAD
     font-family: book-demo;
-    src: url(../formatype-foundry-biofolio-ultimate-book-demo.otf) format("openType");
+    src: url(../assets/web-font/formatype-foundry-biofolio-ultimate-book-demo.otf) format("openType");
 }
 @font-face {
     font-family: foundry;
-    src: url(../formatype-foundry-biofolio-ultimate-extrabold-demo.otf) format("openType");
-=======
-    font-family: vcl;
-    src: url(../assets/web-font/formatype-foundry-biofolio-ultimate-book-demo.otf) format("openType");
+    src: url(../assets/web-font/formatype-foundry-biofolio-ultimate-extrabold-demo.otf) format("openType");
 }
 @font-face {
     font-family: bruh;
     src: url(../assets/web-font/formatype-foundry-biofolio-ultimate-extrabold-demo.otf) format("openType");
->>>>>>> 97ad514967a6ab2507b352027347efe2b276bc1a
 }
 
 :root {
@@ -353,6 +343,7 @@ main h2.text {
     color: #fff;
     font-family: Nebula;
     font-size: 6rem;
+    font-family: Nebula;
     text-transform: uppercase;
 }
 main img.corn {
@@ -412,7 +403,7 @@ main .left{
     top: 100px;
     width: 100%;
 }
-main div .circle_left {
+main div .left_circle {
     position: absolute;
     top: 500px;
     right: 1200px;
@@ -426,7 +417,7 @@ main div .circle_left {
     border-bottom-right-radius: 360px;
     border-top-right-radius: 360px;
 }
-main div .circle_right {
+main div .right_circle {
     position: absolute;
     align-items: flex-start;
     top: 140px;
@@ -441,78 +432,48 @@ main div .circle_right {
     width: 1200px;
     object-fit: fill;
     border-radius: 50%;
-    /* clip-path: circle(67.6% at 93% 68%);; */
 }
-.sketch_data{
+#about-us {
+    display: flex;
+    flex-direction: column;
+}
+.detail_info {
     height: 100vh;
     background: inherit;
     width: auto;
-    /*position: flex;*/
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
-div .rec_left{
-    /* left: 17%;
-    top: 150%; */
-    /*position: flex;*/
-    width: 300px;
-    height: 430px;
-    border-radius: 14%;
-    background: #7ed957;
-}
-div .rec_mid{
-    /* left: 42.5%;
-    top: 150%; */
-    /*position: flex;*/
-    width: 300px;
-    height: 430px;
-    border-radius: 14%;
-    background: #ffde59;
-}
-div .rec_right{
-    /* right: 17%; */
-    /* top: 150%; */
-    /*position: flex;*/
-    width: 300px;
-    height: 430px;
-    border-radius: 14%;
-    background: #ff5757;
-}
-.sketch_data .nft {
+
+.detail_info .big_box {
     display: flex;
-    width: 1000px;
-    height: auto;
-    object-position: -350px ;
+    flex-direction: row;
+    gap: 100px;
+    align-items: center;
 }
-.sketch_data .coin {
-    /*position: flex;*/
+
+.detail_info .medium_box {
     display: flex;
-    width: 1000px;
-    height: auto;
-    object-position: -350px ;
+    flex-direction: row;
+    gap: 90px;
+    align-items: center;
 }
-.sketch_data .group {
-    /*position: flex;*/
-    display: flex;
-    width: 1000px;
-    height: auto;
-    object-position: -350px ;
-}
-.nft_text {
-    position: absolute;
-    bottom: 24%;
-    font-size: 20px;
-}
-.circle_1 {
-    height: 100px;
-    width: 100px;
-    border: 4px solid white;
+
+
+.name {
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+ .box{
+    background-image: url(../assets/admin.jpg);
+    background-position: center;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
-    display: inline-block;
-    position: absolute;
-    bottom: 29%;
+    background-color: #0f5132;
 }
 .bruh {
     background: linear-gradient(#202020, #676767 );
