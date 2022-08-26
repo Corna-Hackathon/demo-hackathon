@@ -2,17 +2,17 @@
 
 @font-face {
     font-family: Ditmemay;
-    src: url(../Nebula-Hollow.otf) format("opentype");
+    src: url(../assets/web-font/Nebula-Hollow.otf) format("opentype");
     
 }
 
 @font-face{
     font-family: vcl;
-    src: url(../formatype-foundry-biofolio-ultimate-book-demo.otf) format("openType");
+    src: url(../assets/web-font/formatype-foundry-biofolio-ultimate-book-demo.otf) format("openType");
 }
 @font-face {
     font-family: bruh;
-    src: url(../formatype-foundry-biofolio-ultimate-extrabold-demo.otf) format("openType");
+    src: url(../assets/web-font/formatype-foundry-biofolio-ultimate-extrabold-demo.otf) format("openType");
 }
 
 :root {
