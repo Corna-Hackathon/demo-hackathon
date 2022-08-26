@@ -388,8 +388,10 @@ div .Text{
     text-transform: uppercase;
     text-align: center;
     font-size: 30px;
+    background: -webkit-linear-gradient(#FFE56F, #A9FF9F);
     font-family: "Noto Sans", sans-serif;
-    color: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 div .small_text{
@@ -405,8 +407,12 @@ div .text-bottom {
     position: relative;
     color: #fff;
     font-size: 30px;
+    padding: 50px;
     text-align: center;
     font-family: "Noto Sans", sans-serif;
+    background: -webkit-linear-gradient(#FFE56F, #A9FF9F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .flex-container {
     position: relative;

@@ -453,8 +453,8 @@ header ul li button.connect{
 }
 
 .podcast-box{ 
-    height: 350px;
-    width: 220px;
+    height: 330px;
+    width: 205px;
     cursor: pointer;
     position: relative ;
     margin: 10px;

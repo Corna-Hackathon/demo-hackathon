@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 @font-face {
-    font-family: Ditmemay;
+    font-family: Nebula;
     src: url(../Nebula-Hollow.otf) format("opentype");
     
 }
 
 @font-face{
-    font-family: vcl;
+    font-family: book-demo;
     src: url(../formatype-foundry-biofolio-ultimate-book-demo.otf) format("openType");
 }
 @font-face {
-    font-family: bruh;
+    font-family: foundry;
     src: url(../formatype-foundry-biofolio-ultimate-extrabold-demo.otf) format("openType");
 }
 
@@ -337,13 +337,13 @@ main h2.text {
     top: 10%;
     left: 9%;
     color: #fff;
-    font-family: Ditmemay;
+    font-family: Nebula;
     font-size: 6rem;
     text-transform: uppercase;
 }
 main img.corn {
     position: absolute;
-    display: inline-block;
+    display: block;
     box-sizing: border-box;
     bottom: 67%;
     left: 12%;
@@ -354,7 +354,7 @@ main h3.quote{
     color: #fff;
     font-size: 2em;
     text-transform: uppercase;
-    font-family: vcl;
+    font-family: book-demo;
     position: absolute;
     bottom: 73%;
     left: 9%;
@@ -375,7 +375,7 @@ main button.start{
     transition: ease-out 0.3s;
     font-size: 24px;
     text-transform: uppercase;
-    font-family: bruh;
+    font-family: foundry;
     outline: none;
 
 }
@@ -385,12 +385,13 @@ main button.start:hover {
     color: black;
 }
 main img.character {
-    transform: scaleX(-1);
     position: absolute;
-    top: 50px;
-    left: 900px;
-    width: 50%;
+    margin-top: -130px;
+    left: 600px;
+    width: 70%;
 }
+
+main img.character
 main .left{
     /*position: flex;*/
     flex-direction: column;
@@ -400,7 +401,7 @@ main .left{
 main div .circle_left {
     position: absolute;
     top: 500px;
-    right: 1600px;
+    right: 1200px;
     background:linear-gradient( #FFE56F, #A9FF9F);
     display: inline;
     margin: 10px;
@@ -415,7 +416,7 @@ main div .circle_right {
     position: absolute;
     align-items: flex-start;
     top: 140px;
-    left: 1300px;
+    left: 1100px;
     background:linear-gradient(to right,  #FFE56F, #A9FF9F);
 
     display: inline-block;
@@ -702,12 +703,13 @@ div .rec_right{
     position: fixed;
     top: 50%;
     left: 50%;
+    color: black;
     transform: translate(-50%, -50%) scale(0);
     transition: 200ms ease-in-out;
-    border: 1px solid black;
+    border: 3px solid rgb(39, 36, 36);
     border-radius: 10px;
     z-index: 100;
-    background-color: white;
+    background-image: url(/assets/cornChar\ \(1\).png);
     width: 800px;
     font-size: 20px;
     max-width: 80%;
@@ -725,8 +727,11 @@ div .rec_right{
     font-size: 34px;
     justify-content: space-between;
     align-items: center;
+    background: -webkit-linear-gradient(#B85B56, #B0D4B8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
-    border-bottom: 1px solid black;
+    border-bottom: 3px solid black;
   }
   
   .content .modal-header .title {
@@ -747,6 +752,35 @@ div .rec_right{
     padding: 10px 15px;
   }
   
+  .content .modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    border-top: 3px solid black;
+    padding: 10px 15px;
+  }
+
+  .content .modal-footer .btn-login {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 130px;
+    height: 40px;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    outline : none;
+    font-weight: 900;
+    background: yellow;
+
+  }
+
+  .content .modal-footer .btn-login:hover {
+    background: #6d7967;
+    color: #eee;
+    
+  }
   #overlay {
     position: fixed;
     opacity: 0;
@@ -763,10 +797,18 @@ div .rec_right{
     opacity: 1;
     pointer-events: all;
     background-color: rgba(255, 255, 255, 0.4);
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
+    filter: blur(100px);
+    -webkit-filter: blur(10px);
+
   }
 
 .game-text {
     background-image: url(../assets/game.png);
+  }
+
+  h5{
+    text-align: center;
+    font-size: 30px;
+    padding: 100px 0;
+    font-family: book-demo;
   }

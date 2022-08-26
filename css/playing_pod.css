@@ -171,7 +171,9 @@ header ul li button.connect{
 /* End of header */
 
 
-
+.music_comment{
+    height: 100vh;
+}
 
 
 /* Footer */
@@ -328,8 +330,8 @@ header ul li button.connect{
 }
 
 .music {
-    position: fixed ;
-    max-width: 500px;
+    position: absolute ;
+    max-width: 600px;
     margin: 0 auto;
     border-radius: 12px;
     background-color: #fff;
@@ -338,7 +340,7 @@ header ul li button.connect{
     top: 40%;
     left:50%;
     transform: translate(-50%, -50%);
-    width: 450px;
+    width: 600px;
 
 }
 
