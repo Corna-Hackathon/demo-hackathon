@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../public/css/up_quizz.css">
+        <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <title>Upload Quizz</title>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <header>
+            <a href="home.html"><img src="../public/assets/logo.png" alt="logo" class="logo"> </a>
+            <ul class="nav_links">
+                <li><a href="/home.html" > <strong>Home</strong></a></li>
+                <li><a href="/news.html" ><strong>News</strong></a></li>
+                <li><a href="/podcast.html"><strong>Podcast</strong></a></li>
+                <li><a href="/game.html"><strong>Game</strong></a></li>
+                <li>
+                    <div class="dropdown">
+                        <a> <strong> More </strong> <i class="fa fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="/charity.html">Charity</a>
+                            <a href="/leaderboard.html">LeaderBoard</a>
+                        </div>
+                    </div>
+                </li>
+                <li> <button class="login" onclick="location='/login.html'"> <strong>Login</strong></button></li>
+            </ul>
+            <script src="/public/js/activePage.js"> </script>
+        </header>
+        <!-- End Of Navbar -->
+        <!-- Back To Top Button -->
+        <a href="#" class="to_top">
+            <i class="fa fa-chevron-up"></i>
+            <script src="/public/js/to_top.js"> </script>
+        </a>
+        <!-- End Of "Back To Top Button"-->
+
+        <!-- Main Content -->
+        <div class="wrapper">
+            <h2>Upload Quizz</h2>
+            <div class="options">
+                <label>
+                    <select class="choices" style="font-family: fontAwesome;">
+                        <option value="fa-music">&#xf001; Pick A Podcast</option>
+                        <option value="saab">Pod A</option>
+                        <option value="opel">Pod B</option>
+                        <option value="audi">Pod C</option>
+                    </select>
+                </label>
+            </div>
+            <div class="question">
+                <input type="text" placeholder="Enter Question..." autofocus>
+            </div>
+            <div class="answer_container">
+                <div class="answer">
+                    <input type="radio" name="answer" id="answer1" checked="checked">
+                    <input type="text" class="answer_text" placeholder="Enter answer 1">
+                </div>
+                <div class="answer">
+                    <input type="radio" name="answer" id="answer2">
+                    <input type="text" class="answer_text" placeholder="Enter answer 2">
+                </div>
+                <div class="answer">
+                    <input type="radio" name="answer" id="answer3">
+                    <input type="text" class="answer_text" placeholder="Enter answer 3">
+                </div>
+                <div class="answer">
+                    <input type="radio" name="answer" id="answer4">
+                    <input type="text" class="answer_text" placeholder="Enter answer 4">
+                </div>    
+            </div>
+            <div class="btn_row">
+                <button class="addnew_btn" id="add">Add</button>
+                <button class="submit_btn" id="submit">Submit</button>
+            </div>
+        </div>
+
+        <!-- Pop Up Validation -->
+
+        <div class="popup_validation" id="popup">
+            <div class="title" style="color: red;">
+                <i class="fas fa-times-circle"></i>
+            </div>
+            <div class="invalid_text">Invalid File Type. Please Choose Again !</div>
+            <div id="overlay"></div>
+        </div>
+
+        <div class="popup_validation" id="successful_popup">
+            <div class="title" style="color: green;">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="invalid_text">You successfully submitted your podcast !</div>
+            <div id="overlay"></div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer" >
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/The-Cornfield-project-109047315262658/"> <i class="fa fa-facebook"></i> </a></li>
+                <li><a href="https://twitter.com/home?lang=vi"> <i class="fa fa-twitter"></i> </a> </li>
+                <li><a href="https://www.youtube.com/"> <i class="fa fa-youtube"></i> </a> </li>
+                <li><a href="https://github.com/Corna-Hackathon/demo-hackathon"> <i class="fa fa-github"></i> </a></li>
+            </ul>
+            <ul class="menu">
+                <li>
+                    <a href="#"><strong>Home</strong></a>
+                </li>
+                <li>
+                    <a href="/news.html"> <strong>New</strong> </a>
+                </li>
+                <li>
+                    <a href="/podcast.html"> <strong>Podcast</strong></a>
+                </li>
+                <li>
+                    <a href="/charity.html"> <strong>Charity</strong></a>
+                </li>
+                <li>
+                    <a href="/leaderboard.html"> <strong>LeaderBoard</strong></a>
+                </li>
+            </ul>
+            <article class="copyright">
+                Corna Coders &copy; 2022
+            </article>
+        </div>
+    <script src="public/js/up_quizz.js"></script>
+    </body>
+</html>
