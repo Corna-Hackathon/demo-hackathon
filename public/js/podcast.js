@@ -1,5 +1,5 @@
 function playPodcast() {
-    window.location.href = "playing_pod.html";
+    window.location.href = "buy_pod.html";
 }
 
 function toCreate() {
