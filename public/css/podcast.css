@@ -64,7 +64,7 @@ html::-webkit-scrollbar-thumb:hover {
 
 /* End of Custom Scrollbar */
 
-/* Header */
+/* ---------- Header ---------- */
 header {
     position: fixed;
     display: flex;
