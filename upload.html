@@ -56,7 +56,7 @@
                     <input type="text" placeholder="Enter podcast name..." id="name">
                 </div>
                 <div class="submit_btn">
-                    <button type="submit" id="submit">Submit</button>
+                    <button type="submit" id="submit" onkeyup="check()">Submit</button>
                 </div>
                 
             </form>
@@ -66,7 +66,7 @@
     <!-- Pop Up Validation -->
 
     <div class="popup_validation" id="popup">
-        <div class="title">
+        <div class="title" style="color: red;">
             <i class="fas fa-times-circle"></i>
         </div>
         <div class="invalid_text">Invalid File Type. Please Choose Again !</div>
@@ -74,7 +74,7 @@
     </div>
 
     <div class="popup_validation" id="successful_popup">
-        <div class="title">
+        <div class="title" style="color: green;">
             <i class="fas fa-check-circle"></i>
         </div>
         <div class="invalid_text">You successfully submitted your podcast !</div>

@@ -1,7 +1,6 @@
 const popup = document.getElementById("popup");
 const blur = document.getElementById("blur");
 
-
 function openPopup() {
     popup.classList.add("open_popup");
     blur.classList.add("active");
@@ -82,3 +81,4 @@ document.querySelector('#submit').addEventListener('click', (e) => {
         close_successful_popup();
     }, 4000);
 })
+

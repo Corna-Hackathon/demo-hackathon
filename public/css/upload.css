@@ -482,7 +482,6 @@ header ul li button.connect {
     flex-direction: column;
     border-radius: 5px;
     border: 2px dashed #6990f2;
-    cursor: pointer;
     padding: 70px ;
 
 }
@@ -556,15 +555,9 @@ header ul li button.connect {
 
 .popup_validation .title{
     font-size: 100px;
-    color: red;
     margin-bottom: 10px;
 }
 
-.popup_validation .title:nth-child(1){
-    font-size: 100px;
-    color: green;
-    margin-bottom: 10px;
-}
 
 .popup_validation .invalid_text{
     font-size: 20px;
