@@ -32,7 +32,9 @@ body {
     overflow-x: hidden;
     margin: 0;
     width: auto;
-    background: linear-gradient(#202020, #676767);
+    /* background: linear-gradient(#202020, #676767);
+     */
+     background: linear-gradient( #f7a76c, #ec7272);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }

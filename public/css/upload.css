@@ -10,19 +10,16 @@
     scroll-behavior: smooth;
 }
 body {
-    min-height: 100vh;
-    position: relative;
+    min-height: 50;
     overflow-x: hidden;
-    margin: 0;
+    height: 50;
     width: auto;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
     background: linear-gradient(to top, #7EE8FA, #EEC0C6) ;
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: Arial, Helvetica, sans-serif;
-    /* margin-bottom: 100px; */
 }
 
 /* Custom Scrollbar */
@@ -248,7 +245,6 @@ header ul li button.connect{
 
 /* Footer */
 .footer{
-    position: absolute;
     text-align: center;
     background-color:rgb(248, 244, 244);
     padding: 40px;
@@ -453,8 +449,8 @@ header ul li button.connect{
     padding: 30px;
     margin-top: 50%;
     background: #fff;
-    /* margin: auto; */
     margin: 100px auto;
+    height: 50;
 }
 
 .wrapper h2{
@@ -477,6 +473,17 @@ header ul li button.connect{
 
 }
 
+.wrapper form{
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 2px dashed #6990f2;
+    cursor: pointer;
+
+}
 form :where(i, p){
     color: #6990f2;
 }
