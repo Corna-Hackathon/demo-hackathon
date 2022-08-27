@@ -560,6 +560,12 @@ header ul li button.connect {
     margin-bottom: 10px;
 }
 
+.popup_validation .title:nth-child(1){
+    font-size: 100px;
+    color: green;
+    margin-bottom: 10px;
+}
+
 .popup_validation .invalid_text{
     font-size: 20px;
     font-weight: 500;

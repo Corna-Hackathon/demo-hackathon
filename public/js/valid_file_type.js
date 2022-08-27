@@ -62,23 +62,23 @@ document.querySelector('#submit').addEventListener('click', (e) => {
 
 
 
-const popup1 = document.getElementById("popup1");
+const successful_popup = document.getElementById("successful_popup");
 
 
-function openPopup1() {
-    popup1.classList.add("open_popup");
+function open_successful_popup() {
+    successful_popup.classList.add("open_popup");
     blur.classList.add("active");
 }
 
-function closePopup1() {
-    popup1.classList.remove("open_popup");
+function close_successful_popup() {
+    successful_popup.classList.remove("open_popup");
     blur.classList.remove("active");
 }
 
 document.querySelector('#submit').addEventListener('click', (e) => {
     e.preventDefault();
-    openPopup1();
+    open_successful_popup();
     setTimeout(() => {
-        closePopup1();
+        close_successful_popup();
     }, 4000);
 })
