@@ -50,14 +50,7 @@ img {
     max-width: 100%;
 }
 .logo {
-    /* color: #fff;
-    font-weight: 700;
-    text-decoration:  none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px; */
-    /* width: 40px;
-    height: auto; */
+
     width: 140px;
     height: auto;
 }
@@ -390,7 +383,7 @@ div .Text{
     font-size: 30px;
     background: -webkit-linear-gradient(#FFE56F, #A9FF9F);
     font-family: "Noto Sans", sans-serif;
-    /* -webkit-background-clip: text; */
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
