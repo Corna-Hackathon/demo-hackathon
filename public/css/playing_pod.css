@@ -79,14 +79,6 @@ img {
     max-width: 100%;
 }
 .logo {
-    /* color: #fff;
-    font-weight: 700;
-    text-decoration:  none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px; */
-    /* width: 40px;
-    height: auto; */
     width: 140px;
     height: auto;
 }
@@ -515,7 +507,7 @@ header ul li button.connect{
     font-family: "Noto Sans", sans-serif;
     display: block;
     color: #000000;
-    border-radius: 0;
+    border-radius: 15px;
     padding: 10px;
     text-decoration: none;
 }

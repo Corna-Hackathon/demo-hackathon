@@ -203,7 +203,6 @@ header ul li button.connect {
     font-family: "Noto Sans", sans-serif;
     display: block;
     color: #fff;
-    border-radius: 0;
     padding: 10px;
     text-decoration: none;
     border-radius: 15px;
@@ -344,7 +343,6 @@ main {
 .footer .list li:hover {
     position: relative;
     text-shadow: 1px 0px #4b4c4d;
-    /* top:-10px; */
 }
 
 .footer .copyright{
