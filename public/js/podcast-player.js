@@ -27,7 +27,7 @@ const musics = [
     title: "Perfect Girl",
     file: "PerfectGirl.mp3",
     image:
-      "./assets/Perfect Girl-Img.jpg",
+      "../assets/Perfect Girl-Img.jpg",
   },
   {
     id: 3,

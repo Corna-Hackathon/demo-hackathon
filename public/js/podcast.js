@@ -3,5 +3,5 @@ function playPodcast() {
 }
 
 function toCreate() {
-    window.location.href = "up_podcast.html"
+    window.location.href = "upload.html"
 }
