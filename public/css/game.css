@@ -231,7 +231,7 @@ main {
     height: 115vh;
 }
 .container{
-    
+    margin: 10px 0 10px 10px;
 }
 
  .show-img {
