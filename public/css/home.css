@@ -40,7 +40,30 @@ body {
 
 }
 
-/* Header */
+/* Custom Scrollbar */
+html::-webkit-scrollbar {
+    width: 20px;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 100vw;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+}
+
+/* End of Custom Scrollbar */
+
+/* ---------- Header ---------- */
 header {
     position: fixed;
     display: flex;
@@ -495,7 +518,7 @@ h1 {
 }
 
 
-}
+
 
 .pop_up_content .pop_up_header {
     padding: 10px 15px;

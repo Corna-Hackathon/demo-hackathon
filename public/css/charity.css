@@ -22,7 +22,32 @@ body {
     background-attachment: fixed;
 
 }
-/* Header */
+
+
+/* Custom Scrollbar */
+html::-webkit-scrollbar {
+    width: 20px;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 100vw;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+}
+
+/* End of Custom Scrollbar */
+
+/* ---------- Header ---------- */
 header {
     position: fixed;
     display: flex;
@@ -184,6 +209,9 @@ header ul li button.connect {
 
 
 
+
+/* --------- Charity Section --------- */
+
 .detail-content{
     height: 100vh;
     display: flex;
@@ -192,7 +220,7 @@ header ul li button.connect {
     flex-direction: column;
 }
 
-/* --------- Charity Section --------- */
+
 div .screen_name{
     position: relative;
     top: 80px;

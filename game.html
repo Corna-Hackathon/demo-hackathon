@@ -12,13 +12,14 @@
     <title>Game</title>
 </head>
 <body>
+    <!-- Navbar -->
     <header>
         <a href="home.html"><img src="../public/assets/logo.png" alt="logo" class="logo"> </a>
         <ul class="nav_links">
-            <li><a href="/home.html" class="Home"> <strong>Home</strong></a></li>
-            <li><a href="/news.html" class="news"><strong>News</strong></a></li>
-            <li><a href="/podcast.html"class="podcast"><strong>Podcast</strong></a></li>
-            <li><a href="/game.html"class="podcast"><strong>Game</strong></a></li>
+            <li><a href="/home.html" > <strong>Home</strong></a></li>
+            <li><a href="/news.html" ><strong>News</strong></a></li>
+            <li><a href="/podcast.html"><strong>Podcast</strong></a></li>
+            <li><a href="/game.html"><strong>Game</strong></a></li>
             <li>
                 <div class="dropdown">
                     <a> <strong> More </strong> <i class="fa fa-caret-down"></i></a>
@@ -28,48 +29,56 @@
                     </div>
                 </div>
             </li>
-            <li> <button class="button" onclick="location='/login.html'"> <strong>Login</strong></button></li>
+            <li> <button class="login" onclick="location='/login.html'"> <strong>Login</strong></button></li>
         </ul>
         <script src="/public/js/activePage.js"> </script>
     </header>
     <!-- End Of Navbar -->
-    <img src="public/assets/game.png" alt="" class="back1">
-    <img src="public/assets/game2.png" alt="" class="back1">
-    <img src="public/assets/game3.png" alt="" class="back1">
-    <img src="public/assets/game4.png" alt="" class="back1">
-    <div class="footer" >
-        <ul class="socials">
-            <li><a href="https://www.facebook.com/The-Cornfield-project-109047315262658/"> <i class="fa fa-facebook"></i> </a></li>
-            <li><a href="https://twitter.com/home?lang=vi"> <i class="fa fa-twitter"></i> </a> </li>
-            <li><a href="https://www.youtube.com/"> <i class="fa fa-youtube"></i> </a> </li>
-            <li><a href="https://github.com/Corna-Hackathon/demo-hackathon"> <i class="fa fa-github"></i> </a></li>
-        </ul>
-    <ul class="list">
-        <li>
-            <a href="#"><strong>Home</strong></a>
-        </li>
-        <li>
-            <a href="/news.html"> <strong>New</strong> </a>
-        </li>
-        <li>
-            <a href="/podcast.html"> <strong>Podcast</strong></a>
-        </li>
-        <li>
-            <a href="/charity.html"> <strong>Charity</strong></a>
-        </li>
-        <li>
-            <a href="/leaderboard.html"> <strong>LeaderBoard</strong></a>
-        </li>
-    </ul>
 
-    <article class="copyright">
-        Corna Coders &copy; 2022
-    </article>
-</div>
+    <!-- Show Image Section-->
+    <img src="public/assets/game.png" alt="" class="show-img">
+    <img src="public/assets/game2.png" alt="" class="show-img">
+    <img src="public/assets/game3.png" alt="" class="show-img">
+    <img src="public/assets/game4.png" alt="" class="show-img">
+    <!-- End Of Show Image Section -->
 
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+
+    <!-- Back To Top Button -->
+        <a href="#" class="to_top">
+            <i class="fa fa-chevron-up"></i>
+            <script src="/public/js/to_top.js"> </script>
+        </a>
+        <!-- End Of "Back To Top Button"-->
+
+
+        <!-- Footer -->
+        <div class="footer" >
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/The-Cornfield-project-109047315262658/"> <i class="fa fa-facebook"></i> </a></li>
+                <li><a href="https://twitter.com/home?lang=vi"> <i class="fa fa-twitter"></i> </a> </li>
+                <li><a href="https://www.youtube.com/"> <i class="fa fa-youtube"></i> </a> </li>
+                <li><a href="https://github.com/Corna-Hackathon/demo-hackathon"> <i class="fa fa-github"></i> </a></li>
+            </ul>
+            <ul class="menu">
+                <li>
+                    <a href="#"><strong>Home</strong></a>
+                </li>
+                <li>
+                    <a href="/news.html"> <strong>New</strong> </a>
+                </li>
+                <li>
+                    <a href="/podcast.html"> <strong>Podcast</strong></a>
+                </li>
+                <li>
+                    <a href="/charity.html"> <strong>Charity</strong></a>
+                </li>
+                <li>
+                    <a href="/leaderboard.html"> <strong>LeaderBoard</strong></a>
+                </li>
+            </ul>
+            <article class="copyright">
+                Corna Coders &copy; 2022
+            </article>
+        </div>
 </body>
 </html>
