@@ -1,311 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--    <link rel="stylesheet" href="css/podcast.css"/>-->
-    <link rel="stylesheet" type="text/css" href="podcast/css/podcast.css">
-    <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- Favicon-->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-    <link rel="icon" href="public/assets/logo.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    <title>Podcast</title>
-</head>
-<body>
-    <header>
-        <a href="home.html"><img src="/public/assets/logo.png" alt="logo" class="logo"> </a>
-        <!-- <a href="#" class="logo"><img src="/assets/logo.png" alt="logo"> </a> -->
-        <ul class="nav_links">
-            <li><a href="/home.html" class="Home"> <strong>Home</strong></a></li>
-            <li><a href="/news.html" class="news"><strong>News</strong></a></li>
-            <li><a href="/podcast.html"class="podcast"><strong>Podcast</strong></a></li>
-            <li><a href="/game.html"class="podcast"><strong>Game</strong></a></li>
-
-            <!-- <li><a href="/market.html" class="market"><strong>Marketplace</strong></a></li> -->
-            <li> <div class="dropdown">
-                <a> <strong> More </strong> <i class="fa fa-caret-down"></i></a>
-                <div class="dropdown-content">
-                    <a href="/charity.html">Charity</a>
-                    <a href="/leaderboard.html">LeaderBoard</a>
-                </div>
-              </div> </li>
-            <script src="/public/js/activePage.js"> </script>
-            
-            <li> <button class="button" onclick="location='/login.html'"> <strong>Login</strong></button></li>
-        </ul>
-        <img src="public/assets/menu-btn.png" alt="menu button" class="menu-btn">
-
-    </header>
-    
-        <div class="bruh">
-        <div class="topnav">
-            <label> <input type="text" placeholder="Search.."> <i class="fa fa-search"></i> </label>
-        </div>
-        <div class="flex-container" >
-            <label>
-                <select class="flex-box" style="font-family: fontAwesome;">
-                    <option value='fa-music'>&#xf001; Best</option>
-                    <option value="saab">Value</option>
-                    <option value="opel">Value</option>
-                    <option value="audi">Value</option> </select>
-            </label>
-            <label>
-                <select class="flex-box"  style="font-family: fontAwesome;">
-                    <option value='fa-calendar-plus-o'>&#xf271;This Month</option>
-                    <option value="saab">Value</option>
-                    <option value="opel">Value</option>
-                    <option value="audi">Value</option> </select>
-            </label>
-            <label>
-                <select class="flex-box" style="font-family: fontAwesome;">
-                    <option value='fa-filter'>&#xf0b0;  Add Filter</option>
-                    <option value="saab">Value</option>
-                    <option value="opel">Value</option>
-                    <option value="audi">Value</option> </select>
-            </label>
-        </div>    
-    </div>
-    <div class="big-flexbox">
-        <div class="main-pod">
-            <h2 class="category">AMAZING PODCASTS ARE WAITING FOR YOU </h2>
-            <div class="podcastt">
-                <div class="podcast-box" onclick="playPodcast()">
-                    <div class="pod-thumb">
-                        <img src="./public/assets/podcastcover.webp" alt="" />
-                    </div>
-                    <h3 class="pod-name">Budgeting Radio</h3>
-                    <div class="box-info">
-                        <h3 class="pod-author">Bui Tung</h3>
-                        <div class="like-button">
-                            <ion-icon name="heart-outline"></ion-icon>
-                            <h3 class="like-numb">789</h3>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="public/css/podcast.css" />
+        <link rel="stylesheet" type="text/css" href="podcast/css/podcast.css" />
+        <link href="https://fonts.googleapis.com/css?family=Noto Sans" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- Favicon-->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+        <link rel="icon" href="public/assets/logo.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <title>Podcast</title>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <header>
+            <a href="home.html"><img src="../public/assets/logo.png" alt="logo" class="logo" /> </a>
+            <ul class="nav_links">
+                <li>
+                    <a href="/home.html"> <strong>Home</strong></a>
+                </li>
+                <li>
+                    <a href="/news.html"><strong>News</strong></a>
+                </li>
+                <li>
+                    <a href="/podcast.html"><strong>Podcast</strong></a>
+                </li>
+                <li>
+                    <a href="/game.html"><strong>Game</strong></a>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <a> <strong> More </strong> <i class="fa fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="/charity.html">Charity</a>
+                            <a href="/leaderboard.html">LeaderBoard</a>
                         </div>
                     </div>
-                </div>
+                </li>
+                <li>
+                    <button class="login" onclick="location='/login.html'"><strong>Login</strong></button>
+                </li>
+            </ul>
+            <script src="/public/js/activePage.js"></script>
+        </header>
+        <!-- End Of Navbar -->
 
-                <div class="podcast-box" onclick="playPodcast()">
-                    <div class="pod-thumb">
-                        <img src="./public/assets/Tame_Impala_-_Currents.png" alt="" />
-                    </div>
-                    <h3 class="pod-name">What Is Blockchain</h3>
-                    <div class="box-info">
-                        <h3 class="pod-author">Livio Kopp</h3>
-                        <div class="like-button">
-                            <ion-icon name="heart-outline"></ion-icon>
-                            <h3 class="like-numb">123</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="podcast-box" onclick="playPodcast()">
-                    <div class="pod-thumb">
-                        <img src="./public/assets/podcastImg.png" alt="" />
-                    </div>
-                    <h3 class="pod-name">Podcast 3</h3>
-                    <div class="box-info">
-                        <h3 class="pod-author">Marc Marco</h3>
-                        <div class="like-button">
-                            <ion-icon name="heart-outline"></ion-icon>
-                            <h3 class="like-numb">271</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="podcast-box" onclick="playPodcast()">
-                    <div class="pod-thumb">
-                        <img src="./public/assets/podcastImg.png" alt="" />
-                    </div>
-                    <h3 class="pod-name">Podcast 3</h3>
-                    <div class="box-info">
-                        <h3 class="pod-author">Marc Marco</h3>
-                        <div class="like-button">
-                            <ion-icon name="heart-outline"></ion-icon>
-                            <h3 class="like-numb">271</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="podcast-box" onclick="playPodcast()">
-                    <div class="pod-thumb">
-                        <img src="./public/assets/podcastImg.png" alt="" />
-                    </div>
-                    <h3 class="pod-name">Podcast 3</h3>
-                    <div class="box-info">
-                        <h3 class="pod-author">Marc Marco</h3>
-                        <div class="like-button">
-                            <ion-icon name="heart-outline"></ion-icon>
-                            <h3 class="like-numb">271</h3>
-                        </div>
-                    </div>
-                </div>
-
+        <!-- Search Section -->
+        <div class="filtered_search">
+            <div class="search_bar">
+                <label> <input type="text" placeholder="Search.." /> <i class="fa fa-search"></i> </label>
             </div>
-            <div class="podcastt">
-                <div class="podcast-box" onclick="playPodcast()">
-                    <div class="pod-thumb">
-                        <img src="./public/assets/eod1sdcagbh74clmo4it.webp" alt="" />
-                    </div>
-                    <h3 class="pod-name">Budgeting Radio</h3>
-                    <div class="box-info">
-                        <h3 class="pod-author">Bui Tung</h3>
-                        <div class="like-button">
-                            <ion-icon name="heart-outline"></ion-icon>
-                            <h3 class="like-numb">789</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="podcast-box" onclick="playPodcast()">
-                    <div class="pod-thumb">
-                        <img src="./public/assets/Tame_Impala_-_Currents.png" alt="" />
-                    </div>
-                    <h3 class="pod-name">What Is Blockchain</h3>
-                    <div class="box-info">
-                        <h3 class="pod-author">Livio Kopp</h3>
-                        <div class="like-button">
-                            <ion-icon name="heart-outline"></ion-icon>
-                            <h3 class="like-numb">123</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="podcast-box" onclick="playPodcast()">
-                    <div class="pod-thumb">
-                        <img src="./public/assets/podcastImg.png" alt="" />
-                    </div>
-                    <h3 class="pod-name">Podcast 3</h3>
-                    <div class="box-info">
-                        <h3 class="pod-author">Marc Marco</h3>
-                        <div class="like-button">
-                            <ion-icon name="heart-outline"></ion-icon>
-                            <h3 class="like-numb">271</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="podcast-box" onclick="playPodcast()">
-                    <div class="pod-thumb">
-                        <img src="./public/assets/podcastImg.png" alt="" />
-                    </div>
-                    <h3 class="pod-name">Podcast 3</h3>
-                    <div class="box-info">
-                        <h3 class="pod-author">Marc Marco</h3>
-                        <div class="like-button">
-                            <ion-icon name="heart-outline"></ion-icon>
-                            <h3 class="like-numb">271</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="podcast-box" onclick="playPodcast()">
-                    <div class="pod-thumb">
-                        <img src="./public/assets/podcastImg.png" alt="" />
-                    </div>
-                    <h3 class="pod-name">Podcast 3</h3>
-                    <div class="box-info">
-                        <h3 class="pod-author">Marc Marco</h3>
-                        <div class="like-button">
-                            <ion-icon name="heart-outline"></ion-icon>
-                            <h3 class="like-numb">271</h3>
-                        </div>
-                    </div>
-                </div>
+            <div class="options">
+                <label>
+                    <select class="choices" style="font-family: fontAwesome;">
+                        <option value="fa-music">&#xf001; Best</option>
+                        <option value="saab">Value</option>
+                        <option value="opel">Value</option>
+                        <option value="audi">Value</option>
+                    </select>
+                </label>
+                <label>
+                    <select class="choices" style="font-family: fontAwesome;">
+                        <option value="fa-calendar-plus-o">&#xf271;This Month</option>
+                        <option value="saab">Value</option>
+                        <option value="opel">Value</option>
+                        <option value="audi">Value</option>
+                    </select>
+                </label>
+                <label>
+                    <select class="choices" style="font-family: fontAwesome;">
+                        <option value="fa-filter">&#xf0b0; Add Filter</option>
+                        <option value="saab">Value</option>
+                        <option value="opel">Value</option>
+                        <option value="audi">Value</option>
+                    </select>
+                </label>
             </div>
         </div>
-        
-        <div class="side-col">
-            <div class="trending-side">
-                <div>
-                    <h2 class="trend-name">Trending searches</h2>
-                    <div class="">
-                        <ul class="trending-list">
-                            <li class="trending-name">
-                                <span>Elon Musk's Mindset</span>
-                                <span><ion-icon name="chevron-forward-outline"></ion-icon></span>
-                            </li>
-                            <li class="trending-name">
-                                <span>YOLO lifestyle</span>
-                                <span><ion-icon name="chevron-forward-outline"></ion-icon></span>
-                            </li>
-                            <li class="trending-name">
-                                <span>Investment Sites</span>
-                                <span><ion-icon name="chevron-forward-outline"></ion-icon></span>
-                            </li>
-                            <li class="trending-name">
-                                <span>Stocks and Bonds</span>
-                                <span><ion-icon name="chevron-forward-outline"></ion-icon></span>
-                            </li>
-                            <li class="trending-name">
-                                <span>Bitcoin Rising</span>
-                                <span><ion-icon name="chevron-forward-outline"></ion-icon></span>
-                            </li>
-                        </ul>
+        <!-- End Of Search Section-->
+
+        <!-- Podcast Section -->
+        <div class="podcast_section">
+            <div class="main-pod">
+                <h2 class="category">AMAZING PODCASTS ARE WAITING FOR YOU</h2>
+                <div class="podcast">
+                    <div class="podcast-box" onclick="playPodcast()">
+                        <div class="pod-thumb">
+                            <img src="./public/assets/podcastcover.webp" alt="" />
+                        </div>
+                        <h3 class="pod-name">Budgeting Radio</h3>
+                        <div class="box-info">
+                            <h3 class="pod-author">Bui Tung</h3>
+                            <div class="like-button">
+                                <ion-icon name="heart-outline"></ion-icon>
+                                <h3 class="like-numb">789</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="podcast-box" onclick="playPodcast()">
+                        <div class="pod-thumb">
+                            <img src="./public/assets/Tame_Impala_-_Currents.png" alt="" />
+                        </div>
+                        <h3 class="pod-name">What Is Blockchain</h3>
+                        <div class="box-info">
+                            <h3 class="pod-author">Livio Kopp</h3>
+                            <div class="like-button">
+                                <ion-icon name="heart-outline"></ion-icon>
+                                <h3 class="like-numb">123</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="podcast-box" onclick="playPodcast()">
+                        <div class="pod-thumb">
+                            <img src="./public/assets/podcastImg.png" alt="" />
+                        </div>
+                        <h3 class="pod-name">Podcast 3</h3>
+                        <div class="box-info">
+                            <h3 class="pod-author">Marc Marco</h3>
+                            <div class="like-button">
+                                <ion-icon name="heart-outline"></ion-icon>
+                                <h3 class="like-numb">271</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="podcast-box" onclick="playPodcast()">
+                        <div class="pod-thumb">
+                            <img src="./public/assets/podcastImg.png" alt="" />
+                        </div>
+                        <h3 class="pod-name">Podcast 3</h3>
+                        <div class="box-info">
+                            <h3 class="pod-author">Marc Marco</h3>
+                            <div class="like-button">
+                                <ion-icon name="heart-outline"></ion-icon>
+                                <h3 class="like-numb">271</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="podcast-box" onclick="playPodcast()">
+                        <div class="pod-thumb">
+                            <img src="./public/assets/podcastImg.png" alt="" />
+                        </div>
+                        <h3 class="pod-name">Podcast 3</h3>
+                        <div class="box-info">
+                            <h3 class="pod-author">Marc Marco</h3>
+                            <div class="like-button">
+                                <ion-icon name="heart-outline"></ion-icon>
+                                <h3 class="like-numb">271</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="podcast">
+                    <div class="podcast-box" onclick="playPodcast()">
+                        <div class="pod-thumb">
+                            <img src="./public/assets/Tame_Impala_-_Currents.png" alt="" />
+                        </div>
+                        <h3 class="pod-name">Budgeting Radio</h3>
+                        <div class="box-info">
+                            <h3 class="pod-author">Bui Tung</h3>
+                            <div class="like-button">
+                                <ion-icon name="heart-outline"></ion-icon>
+                                <h3 class="like-numb">789</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="podcast-box" onclick="playPodcast()">
+                        <div class="pod-thumb">
+                            <img src="./public/assets/Tame_Impala_-_Currents.png" alt="" />
+                        </div>
+                        <h3 class="pod-name">What Is Blockchain</h3>
+                        <div class="box-info">
+                            <h3 class="pod-author">Livio Kopp</h3>
+                            <div class="like-button">
+                                <ion-icon name="heart-outline"></ion-icon>
+                                <h3 class="like-numb">123</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="podcast-box" onclick="playPodcast()">
+                        <div class="pod-thumb">
+                            <img src="./public/assets/podcastImg.png" alt="" />
+                        </div>
+                        <h3 class="pod-name">Podcast 3</h3>
+                        <div class="box-info">
+                            <h3 class="pod-author">Marc Marco</h3>
+                            <div class="like-button">
+                                <ion-icon name="heart-outline"></ion-icon>
+                                <h3 class="like-numb">271</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="podcast-box" onclick="playPodcast()">
+                        <div class="pod-thumb">
+                            <img src="./public/assets/podcastImg.png" alt="" />
+                        </div>
+                        <h3 class="pod-name">Podcast 3</h3>
+                        <div class="box-info">
+                            <h3 class="pod-author">Marc Marco</h3>
+                            <div class="like-button">
+                                <ion-icon name="heart-outline"></ion-icon>
+                                <h3 class="like-numb">271</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="podcast-box" onclick="playPodcast()">
+                        <div class="pod-thumb">
+                            <img src="./public/assets/podcastImg.png" alt="" />
+                        </div>
+                        <h3 class="pod-name">Podcast 3</h3>
+                        <div class="box-info">
+                            <h3 class="pod-author">Marc Marco</h3>
+                            <div class="like-button">
+                                <ion-icon name="heart-outline"></ion-icon>
+                                <h3 class="like-numb">271</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="upload-box" onclick="toCreate()">
-                <h2 class="upload-text">MAKE YOUR</h2>
-                <div class="inner-box">
-                    <i class="fa fa-microphone" aria-hidden="true" style="font-size: 60px"></i>
+            <!-- End Of Podcast Section -->
+
+            <!-- Side Content Section -->
+            <div class="side-col">
+                <div class="trending-side">
+                    <div>
+                        <h2 class="trend-name">Trending searches</h2>
+                        <div class="">
+                            <ul class="trending-list">
+                                <li class="trending-name">
+                                    <span>Elon Musk's Mindset</span>
+                                    <span><ion-icon name="chevron-forward-outline"></ion-icon></span>
+                                </li>
+                                <li class="trending-name">
+                                    <span>YOLO lifestyle</span>
+                                    <span><ion-icon name="chevron-forward-outline"></ion-icon></span>
+                                </li>
+                                <li class="trending-name">
+                                    <span>Investment Sites</span>
+                                    <span><ion-icon name="chevron-forward-outline"></ion-icon></span>
+                                </li>
+                                <li class="trending-name">
+                                    <span>Stocks and Bonds</span>
+                                    <span><ion-icon name="chevron-forward-outline"></ion-icon></span>
+                                </li>
+                                <li class="trending-name">
+                                    <span>Bitcoin Rising</span>
+                                    <span><ion-icon name="chevron-forward-outline"></ion-icon></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <h2 class="upload-text">OWN PODCAST</h2>
+
+                <!-- Upload Section -->
+                <div class="upload-box" onclick="toCreate()">
+                    <h2 class="upload-text">MAKE YOUR</h2>
+                    <div class="inner-box">
+                        <i class="fa fa-microphone" aria-hidden="true" style="font-size: 60px;"></i>
+                    </div>
+                    <h2 class="upload-text">OWN PODCAST</h2>
+                </div>
+                <!-- End Of Upload Section -->
             </div>
         </div>
-    </div>
-    
-   
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+        <!-- End of Side Content Section -->
 
 
-    <a href="#" class="to_top">
-        <i class="fa fa-chevron-up"></i>
-        <script src="/public/js/to_top.js"> </script>
-    </a>
+        <!-- Back To Top Button -->
+        <a href="#" class="to_top">
+            <i class="fa fa-chevron-up"></i>
+            <script src="/public/js/to_top.js"> </script>
+        </a>
+        <!-- End Of "Back To Top Button"-->
 
-    
-    <div class="footer" >
-        <ul class="socials">
-            <li><a href="https://www.facebook.com/The-Cornfield-project-109047315262658/"> <i class="fa fa-facebook"></i> </a></li>
-            <li><a href="https://twitter.com/home?lang=vi"> <i class="fa fa-twitter"></i> </a> </li>
-            <li><a href="https://www.youtube.com/"> <i class="fa fa-youtube"></i> </a> </li>
-            <li><a href="https://github.com/Corna-Hackathon/demo-hackathon"> <i class="fa fa-github"></i> </a></li>
-        </ul>
-    <ul class="list">
-        <li>
-            <a href="#"><strong>Home</strong></a>
-        </li>
-        <li>
-            <a href="/news.html"> <strong>New</strong> </a>
-        </li>
-        <li>
-            <a href="/podcast.html"> <strong>Podcast</strong></a>
-        </li>
-        <li>
-            <a href="/charity.html"> <strong>Charity</strong></a>
-        </li>
-        <li>
-            <a href="/leaderboard.html"> <strong>LeaderBoard</strong></a>
-        </li>
-    </ul>
 
-    <article class="copyright">
-        Corna Coders &copy; 2022
-    </article>
-</div>
-<script src="./public/js/podcast.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
+        <!-- Footer -->
+        <div class="footer" >
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/The-Cornfield-project-109047315262658/"> <i class="fa fa-facebook"></i> </a></li>
+                <li><a href="https://twitter.com/home?lang=vi"> <i class="fa fa-twitter"></i> </a> </li>
+                <li><a href="https://www.youtube.com/"> <i class="fa fa-youtube"></i> </a> </li>
+                <li><a href="https://github.com/Corna-Hackathon/demo-hackathon"> <i class="fa fa-github"></i> </a></li>
+            </ul>
+            <ul class="menu">
+                <li>
+                    <a href="#"><strong>Home</strong></a>
+                </li>
+                <li>
+                    <a href="/news.html"> <strong>New</strong> </a>
+                </li>
+                <li>
+                    <a href="/podcast.html"> <strong>Podcast</strong></a>
+                </li>
+                <li>
+                    <a href="/charity.html"> <strong>Charity</strong></a>
+                </li>
+                <li>
+                    <a href="/leaderboard.html"> <strong>LeaderBoard</strong></a>
+                </li>
+            </ul>
+            <article class="copyright">
+                Corna Coders &copy; 2022
+            </article>
+        </div>
+        <!-- End of Footer -->
+
+
+        <script src="./public/js/podcast.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
 </html>
-
-
