@@ -259,7 +259,6 @@ header ul li button.connect {
     opacity: 1;
 }
 
-
 /* Footer */
 .footer{
     text-align: center;
@@ -500,7 +499,7 @@ header ul li button.connect {
     text-align: center;
 }
 
-.submit_btn input {
+.submit_btn button {
     background:linear-gradient(to right,  #FFE56F, #A9FF9F);
     border: none;
     border-radius: 15px;
@@ -511,4 +510,57 @@ header ul li button.connect {
     margin: 4px 2px;
     cursor: pointer;
     font-size: 14px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container#blur.active {
+    filter: blur(20px);
+}
+
+/* Pop Up Validation */
+.popup_validation {
+    background:white;
+    border: 1px solid black;
+    border-radius: 5px;
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    margin: auto;
+    display: flex;
+    padding: 25px 30px;
+    width: 450px;
+    height: auto;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    pointer-events: none;
+    font-family: Arial, Helvetica, sans-serif;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open_popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+
+
+.popup_validation .title{
+    font-size: 100px;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.popup_validation .invalid_text{
+    font-size: 20px;
+    font-weight: 500;
 }
