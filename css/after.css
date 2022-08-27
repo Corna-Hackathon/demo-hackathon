@@ -1,3 +1,10 @@
+@font-face {
+    font-family: foundry;
+    src: url(../assets/web-font/formatype-foundry-biofolio-ultimate-extrabold-demo.otf) format("openType");
+}
+
+
+
 :root {
     --top_var: 31%;
 }
@@ -18,7 +25,7 @@ body {
     overflow-x: hidden;
     margin: 0;
     width: auto;
-    background: linear-gradient(to top, #7EE8FA, #EEC0C6) ;
+    background: linear-gradient(#202020, #676767 );
     background-repeat: no-repeat;
     background-attachment: fixed;
 
@@ -213,16 +220,15 @@ header ul li button.connect{
     background-color: #bb6c69;
     color: #fff;
 }
-
-
-div .text_header{
+.text_header{
     position: relative;
     top: 80px;
     text-align: center;
-    font-size: 45px;
-    font-weight: 900;
-    font-family: "Noto Sans", sans-serif;
-    color: black;
+    font-size: 60px;
+    font-family: foundry;
+    background: -webkit-linear-gradient(#FFE56F, #A9FF9F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
 }
 
