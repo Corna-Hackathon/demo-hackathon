@@ -13,7 +13,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding-bottom: 204px;
     position: relative;
     overflow-x: hidden;
     margin: 0;
@@ -23,37 +22,29 @@ body {
     background-attachment: fixed;
 
 }
-/* Header */
+/* ---------- Header ----------*/
 header {
     position: fixed;
+    display: flex;
+    height: 70px;
+    width: 100%;
     z-index: 100;
     top: 0;
     left: 0;
-    width: 100%;
     padding: 30px 100px;
-    display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: Arial Bold,  'Arial Narrow Bold', sans-serif;
-    background:linear-gradient(to right,  #FFE56F, #A9FF9F);
-
-    height: 70px;
+    font-family: Arial Bold, 'Arial Narrow Bold', sans-serif;
+    background: linear-gradient(to right, #FFE56F, #A9FF9F);
     border-radius: 2px;
 }
-main {
-    width: 100%;
 
-}
 
-img {
-    display: block;
-    max-width: 100%;
-}
 .logo {
-
     width: 140px;
     height: auto;
 }
+
 header ul {
     display: flex;
     justify-content: center;
@@ -62,35 +53,40 @@ header ul {
     font-family: "Noto Sans", sans-serif;
 
 }
-header ul li{
+
+header ul li {
     list-style: none;
     margin-left: 40px;
 
 
 }
-header ul li a{
+
+header ul li a {
     color: #202020;
     text-decoration: none;
     padding: 6px 15px;
     border-radius: 15px;
     transition: all 0.5s ease-in-out;
 }
+
 header ul li a:hover {
     color: #000;
     box-shadow: 0 0 5px #FFFF00,
-    0 0 20px rgb(255 255 0 / 0.8),
-    0 0 35px rgb(255 255 0 / 0.7),
-    0 0 50px rgb(255 255 0 / 0.6);
+        0 0 20px rgb(255 255 0 / 0.8),
+        0 0 35px rgb(255 255 0 / 0.7),
+        0 0 50px rgb(255 255 0 / 0.6);
     background: #ffff00;
     transition: all 0.5s ease-out;
 }
-header ul li a.active{
+
+header ul li a.active {
     background: #ffff00;
     color: #000;
 
 
 }
-header ul li button.connect{
+
+header ul li button.connect {
     width: 100%;
     height: 40px;
     border-radius: 15px;
@@ -98,22 +94,15 @@ header ul li button.connect{
     color: #000;
 
 }
-.menu-btn {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    width: 40px;
-    cursor: pointer;
-    display: none;
-}
-/* Connect Button */
-.button {
+
+/* Login Button */
+.login {
     outline: 0;
     position: relative;
     border-radius: 15px;
     display: inline-block;
-    padding: 10px 40px;
-    font-size: 16px;
+    padding: 6px 40px;
+    font-size: 20px;
     overflow: hidden;
     cursor: pointer;
     border: 1px;
@@ -123,47 +112,178 @@ header ul li button.connect{
     font-family: "noto sans", sans-serif;
     transition: box-shadow 0.5s ease-in-out, border-color 0.5s ease-in-out;
 }
-.button:hover {
-    background-color: #e88845;
-    color: #fff;
-    box-shadow: 0 0 5px #6558db,
-    0 0 20px rgba(76, 0, 255, 0.596),
-    0 0 35px rgb(75 0 255 / 0.7),
-    0 0 50px rgb(75 0 255 / 0.6);
-    border-color: #fff;
-}
-.button {
-    outline: 0;
-    position: relative;
-    display: inline-block;
-    padding: 10px 40px;
-    font-size: 20px;
-    overflow: hidden;
-    cursor: pointer;
-    background: #e88845;
-    color: #000;
-    font-weight: 600;
-    color: #fff;
-    transition: box-shadow 0.5s ease-in-out, border-color 0.5s ease-in-out;
-}
-.button:hover {
+
+
+.login:hover {
     background-color: rgb(168, 36, 36);
     color: #000;
     box-shadow: 0 0 5px rgb(168, 36, 36),
-    0 0 20px rgb(24.75 21.57 53.68 / 0.8),
-    0 0 35px rgb(24.75 21.57 53.68 / 0.7),
-    0 0 50px rgb(24.75 21.57 53.68 / 0.6);
+        0 0 20px rgb(24.75 21.57 53.68 / 0.8),
+        0 0 35px rgb(24.75 21.57 53.68 / 0.7),
+        0 0 50px rgb(24.75 21.57 53.68 / 0.6);
 }
 
-/* End of header */
+.dropdown a {
+    border: none;
+    /*padding: 15px 34px;*/
+    padding: 6px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    width: 100%;
+    margin: 4px 6px;
+    cursor: pointer;
+    font-family: "Noto Sans", sans-serif;
+    background-color: #e88845;
+    color: #fff;
+    border-radius: 15px;
+}
 
+.dropdown-content {
 
-
-
-
-/* Footer */
-.footer{
+    background-color: inherit;
+    display: none;
     position: absolute;
+    width: auto;
+    overflow: auto;
+    border-radius: 15px;
+
+
+}
+
+.dropdown:hover .dropdown-content {
+    overflow-x: hidden;
+    display: block;
+
+
+}
+
+.dropdown-content a {
+    font-family: "Noto Sans", sans-serif;
+    display: block;
+    color: #fff;
+    border-radius: 0;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.dropdown-content a:hover {
+    background-color: yellow;
+    color: #000;
+    border-radius: 15px;
+
+
+}
+
+/* ---------- End of header ----------*/
+
+
+
+
+
+
+.detail-content{
+    height: 100vh;
+    display: flex;
+    justify-self: stretch;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* --------- Charity Section --------- */
+div .screen_name{
+    position: relative;
+    top: 80px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    background: -webkit-linear-gradient(#FFE56F, #A9FF9F);
+    font-family: "Noto Sans", sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+div .text_description{
+    position: relative;
+    top: 100px;
+    display: flex;
+    text-align: center;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div .text-bottom {
+    position: relative;
+    color: #fff;
+    font-size: 30px;
+    padding: 50px;
+    text-align: center;
+    font-family: "Noto Sans", sans-serif;
+    background: -webkit-linear-gradient(#FFE56F, #A9FF9F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.charity_organizations {
+    position: relative;
+    top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+}
+
+.group {
+    width: 200px;
+    background-color: red;
+    color: white;
+    font-size: 25px;
+    border-radius: 25px;
+    text-align: center;
+    flex: 0 32%;
+  height: 170px;
+  margin-bottom: 5%; 
+  cursor: pointer;
+}
+
+/* --------- End of Charity Section --------- */
+
+
+
+/* ---------- Back To Top Button ----------*/
+.to_top{
+    background: rgb(150, 202, 115);
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #000;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.to_top.active {
+    bottom:32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+/* ---------- End Of Back To Top Button ---------- */
+
+
+
+
+/* ---------- Footer ---------- */
+.footer{
+    /* position: absolute; */
     text-align: center;
     background-color:rgb(248, 244, 244);
     padding: 40px;
@@ -251,180 +371,5 @@ header ul li button.connect{
     color: #aaa;
 }
 
+/* ---------- End Of Footer ---------- */
 
-
-
-/* Back to top */
-.back-to-top {
-    position: fixed;
-    right: 30px;
-    bottom: 30px;
-    width: 48px;
-    height: 48px;
-    border-radius: 4px;
-    color: #fff;
-    /*background-color: var(--main-color);*/
-    text-align: center;
-    line-height: 49px;
-    z-index: 99;
-    font-size: 16px;
-    transition: 0.4s;
-    cursor: pointer;
-    display: none;
-    animation: backto-top-bounce 4s infinite ease-in-out;
-  }
-  .back-to-top:hover {
-    box-shadow: 0 3px 7px 0 rgba(254, 242, 46, 0.35);
-  }
-  @keyframes backto-top-bounce {
-    0% {
-      transform: translateY(-5px);
-    }
-    50% {
-      transform: translateY(10px);
-    }
-    100% {
-      transform: translateY(-5px);
-    }
-  }
-
-
-.to_top{
-    background: rgb(150, 202, 115);
-    position: fixed;
-    bottom: 16px;
-    right: 32px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 32px;
-    color: #000;
-    text-decoration: none;
-    opacity: 0;
-    pointer-events: none;
-    transition: all .4s;
-}
-
-.to_top.active {
-    bottom:32px;
-    pointer-events: auto;
-    opacity: 1;
-}
-
-.dropdown a{
-    border: none;
-    /*padding: 15px 34px;*/
-    padding: 6px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    width: 100%;
-    margin: 4px 2px;
-    cursor: pointer;
-    font-family: "Noto Sans", sans-serif;
-    background-color:  #e88845;
-    color: #fff;
-    border-radius: 15px;
-}
-.dropdown-content {
-
-    background-color: inherit;
-    display: none;
-    position: absolute;
-    width: auto;
-    overflow: auto;
-    border-radius: 15px;
-
-
-}
-.dropdown:hover .dropdown-content {
-    overflow-x: hidden;
-    display: block;
-
-
-}
-.dropdown-content a {
-    font-family: "Noto Sans", sans-serif;
-    display: block;
-    color: #fff;
-    border-radius: 0;
-    padding: 10px;
-    text-decoration: none;
-    border-radius: 15px;
-}
-.dropdown-content a:hover {
-    background-color: yellow;
-    color: #000;
-    border-radius: 15px;
-
-
-}
-
-
-
-.head{
-    height: 100vh;
-    display: flex;
-    justify-self: stretch;
-    align-items: center;
-    flex-direction: column;
-}
-
-/* Charity*/
-div .Text{
-    position: relative;
-    top: 80px;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 30px;
-    background: -webkit-linear-gradient(#FFE56F, #A9FF9F);
-    font-family: "Noto Sans", sans-serif;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-div .small_text{
-    position: relative;
-    top: 100px;
-    display: flex;
-    text-align: center;
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-div .text-bottom {
-    position: relative;
-    color: #fff;
-    font-size: 30px;
-    padding: 50px;
-    text-align: center;
-    font-family: "Noto Sans", sans-serif;
-    background: -webkit-linear-gradient(#FFE56F, #A9FF9F);
-    /* -webkit-background-clip: text; */
-    -webkit-text-fill-color: transparent;
-}
-.flex-container {
-    position: relative;
-    top: 200px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    height: auto;
-}
-
-.Flex-box {
-    width: 200px;
-    background-color: red;
-    color: white;
-    font-size: 25px;
-    border-radius: 25px;
-    text-align: center;
-    flex: 0 32%;
-  height: 170px;
-  margin-bottom: 5%; 
-  cursor: pointer;
-}
