@@ -222,7 +222,7 @@ header ul li button.connect{
     font-family: "Noto Sans", sans-serif;
     display: block;
     color: #000000;
-    border-radius: 0;
+    border-radius: 15px;
     padding: 10px;
     text-decoration: none;
 }

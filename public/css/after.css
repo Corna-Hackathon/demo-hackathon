@@ -67,7 +67,6 @@ header {
     align-items: center;
     font-family: Arial Bold,  'Arial Narrow Bold', sans-serif;
     background:linear-gradient(to right,  #FFE56F, #A9FF9F);
-
     height: 70px;
     border-radius: 2px;
 }
@@ -81,14 +80,6 @@ img {
     max-width: 100%;
 }
 .logo {
-    /* color: #fff;
-    font-weight: 700;
-    text-decoration:  none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px; */
-    /* width: 40px;
-    height: auto; */
     width: 140px;
     height: auto;
 }
@@ -179,7 +170,6 @@ header ul li button.connect{
     overflow: hidden;
     cursor: pointer;
     background: #e88845;
-    color: #000;
     font-weight: 600;
     color: #fff;
     transition: box-shadow 0.5s ease-in-out, border-color 0.5s ease-in-out;
@@ -197,15 +187,13 @@ header ul li button.connect{
 
 .dropdown a{
     border: none;
-  /*padding: 15px 34px;*/
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  width: 100%;
-  margin: 4px 2px;
-  cursor: pointer;
-    /*text-decoration: none;*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    width: 100%;
+    margin: 4px 2px;
+    cursor: pointer;
     padding: 6px 20px;
     font-family: "Noto Sans", sans-serif;
     background-color:  #e88845;
@@ -213,14 +201,11 @@ header ul li button.connect{
 }
 
 .dropdown-content {
-
     background-color: inherit;
     display: none;
     position: absolute;
     width: auto;
     overflow: auto;
-
-
 }
 
 
